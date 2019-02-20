@@ -1,5 +1,5 @@
 /* ================================= 
-  Base Element Styles
+  20190219Base Element Styles
 ==================================== */
 *{
 	box-sizing: border-box;
@@ -26,9 +26,138 @@ p{
 
 /* ---- Layout Containers ---- */
 
-form {
-    display: none;
-    margin-top: 0em;
+		.x {	
+			display: none;
+			position: absolute;
+   			top: -8px;
+    		right: 0px;
+    		z-index: 1400;
+    		color:black;
+    		font-size: 10px;
+		}
+
+
+		#cursor > a{
+			position: absolute;
+			color: transparent;
+		    top: -20px;
+		    right: -10px;
+		    color: ;
+		    font-size: 50px;
+			}
+
+        .white_content {
+            display: none;
+            position: absolute;
+            top: 0%;
+            right: 95%;
+            height: 90%;
+            /* padding: 20px; */
+            border: 1px solid gray;
+            border-radius: 20em;
+            background-color: white;
+            z-index:1002;
+            overflow: auto;
+        } 
+
+/* ---------- Campaign ----------- */
+.campaign {
+    width: 100%;
+    height: 500px;
+    background-image: url("http://18.214.165.31/assets/keyvisuals/201807242228.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.story {
+    padding: 166px 0 106px 50px;
+    font-size: 30px;
+    line-height: 57px;
+    color: #070707;
+    font-family: PingFangTC-Thin, sans-serif;
+}
+
+.last-line {
+    font-size: 20px;
+}
+
+.circles {
+    position: relative;
+    bottom: 34px;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    margin-left: 22px;
+    background-color: #000000;
+    opacity: 0.4;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.campaign .current {
+    background-color: #8b572a;
+    opacity: 1;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  background-color: Gray;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+#keyword{
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  font-size: 18px;
+  border-radius: 15px;
+  width: 150px;
+  margin-right: 10px;
+}
+
+#form{
+	position: relative;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+#form > div{
+	display: inline-block;
+	position: absolute;
+    top: -2px;
+    right: 10px;
+}
+
+.item-1 > img{
+	width:30px;
 }
 
 .wrapper{
@@ -59,10 +188,6 @@ form {
 	background-color: #fff;
 }
 
-.item-1 {
-	position: relative;
-	display: inline-block;
-}
 
 
 .new-buy{
@@ -88,32 +213,42 @@ form {
   color: #ffffff;
 }
 
-.flex-container{
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: center;
-	margin: 0;
-	-webkit-align-items: center;
-	align-items: center;
-	-webkit-justify-content: center;
-	justify-content: center;
-}
-
-.flex-container > div {
+.white-div{
+	background-color: white;
 	flex-basis: 360px;
-	background-color: #d8d8d8;
 	min-height: 480px;
 	width: 100%;
 	margin: 60px;
 	text-align: center;
 	line-height: 75px;
 	font-size:30px;
-	-webkit-align-items: center;
-	align-items: center;
-	-webkit-justify-content: center;
+	align-items: flex-start;
+	position: relative;
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.flex-container{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin: 0;
+	-webkit-align-items: flex-start;
+	align-items: flex-start;
 	justify-content: center;
+}
+
+.flex-container > div {
+	flex-basis: 360px;
+	min-height: 480px;
+	width: 100%;
+	margin: 60px;
+	text-align: center;
+	line-height: 75px;
+	font-size:30px;
+	-webkit-align-items: flex-start;
+	align-items: flex-start;
 	position: relative;
 	display: flex;
 	flex-flow: column wrap;
@@ -156,22 +291,26 @@ form {
 }
 
 .basic > img{
+	width:30px;
+	height: 30px;
+}
+
+
+.ui{
+	height: 24px;
+	width: 24px;
+	margin-right: 2px;
+}
+
+.qq{
+	max-width: 360px;
+	margin-top: 0px;
+}
+
+.qq > img{
 	width: 100%;
 }
 
-.basic .item-1{
-	position: relative;
-	padding: 3px;
-	border-width: 1px;
-	border-style: solid;
-	border-color: #979797;
-	border-radius: 40px;
-	width: 250px;
-	display: flex;
-	flex-flow: row wrap;
-	flex-grow: 1;
-	justify-content: flex-end;
-}
 
 .product-1 .new-buy {
 	top: 20px;
@@ -207,7 +346,6 @@ form {
 
 .cloth-text-1 {
 	left: 0px;
-	bottom: -120px;
 	display: block;
 	position: absolute;
 }
@@ -247,24 +385,10 @@ form {
 	left:0px;
 }
 
-.cloth-text-1 > div,
-.cloth-text-2 > div,
-.cloth-text-3 > div,
-.cloth-text-4 > div,
-.cloth-text-5 > div,
-.cloth-text-6 > div{
-  display: inline-block;
-  color: #3f3a3a;
-  width: auto;
-}
 
-.cloth-text-1 > p,
-.cloth-text-2 > p,
-.cloth-text-3 > p,
-.cloth-text-4 > p,
-.cloth-text-5 > p,
-.cloth-text-6 > p{
-  display: inline-block;
+
+.cloth-text-1 > p{
+  display: block;
   font-family: NotoSansCJKtc;
   font-size: 12px;
   font-weight: normal;
@@ -432,27 +556,7 @@ form {
 	padding:10px 15px;
 }
 
-.circle{
-	display: flex;
-	flex-flow: row nowrap;
-	position: absolute;
-	padding: 10px;
-	left: 800px;
-	top: 480px;
-}
 
-.circle > div{
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  opacity: 0.4;
-  background-color: #fff;
-  margin-right: 22px;
-}
-
-.circle .circle-color {
-	background-color: #8b572a;
-}
 
 .banner{
 	max-width: 1920px;
@@ -679,6 +783,29 @@ width: 100%;
     color: white;
 }
 
+.cloth-color{
+    left: 0px;
+    top: 500px;
+    max-width: 360px;
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    position: absolute;
+}
+
+.cloth-color .ui{
+	margin-right: 10px;
+}
+
+.cloth-text-1{
+	bottom:-100px;
+}
+
+.cloth-text-1 > p{
+	display:block;
+	font-size:18px;
+	line-height:10px;
+}
 
 /* ================================= 
 Media Queries
@@ -688,6 +815,14 @@ Media Queries
 /* On screens that are 1400px or less, set the background color to blue */
 
 @media screen and (max-width: 1400px){
+
+.cloth-color{
+	max-width:360px;
+	height: 24px; 
+	display: flex;
+	flex-flow: row wrap;
+}
+
 
 	.footer {
 	    min-height: 115px;
@@ -726,6 +861,11 @@ Media Queries
 	    background-color: blue;
 	  }
 
+	  	  .footer-basic {
+ 		margin-left: 0;
+ 	}
+
+
 	  .btn_logo01{
 	  	width:200px;
 	  }
@@ -747,21 +887,6 @@ Media Queries
 	    flex-flow: row wrap;
 	  }
 
-  	.basic .item-1 {
-	    position: relative;
-	    padding: 0;
-	    border-width: 1px;
-	    border-style: solid;
-	    border-color: #979797;
-	    border-radius: 40px;
-	    width: 200px;
-	    height: 30px;
-	    display: flex;
-	    flex-flow: row wrap;
-	    flex-grow: 1;
-	    justify-content: flex-end;
-	}
-
 	.basic > div {
 	    width: 30px;
 	    height: 30px;
@@ -776,7 +901,7 @@ Media Queries
 	}
 
 
-		.item1 > img {
+	.item1 > img {
 	    width: 25px;
 	    height: 25px;
 	}
@@ -799,25 +924,6 @@ Media Queries
 	}
 
 
-	.circle {
-	    display: flex;
-	    flex-flow: row nowrap;
-	    position: absolute;
-	    padding: 10px;
-	    left: 600px;
-	    top: 480px;
-	}
-
-
-	.circle > div {
-	    width: 7px;
-	    height: 7px;
-	    border-radius: 100%;
-	    opacity: 0.4;
-	    background-color: #fff;
-	    margin-right: 22px;
-	}
-		
 	 .flex-container{
 	 	margin-top:0px;
 
@@ -835,7 +941,6 @@ Media Queries
 	.flex-container > div {
 	    flex-basis: 360px;
 	    width: 100%;
-	    background-color: #d8d8d8;
 	    min-height: 480px;
 	    width: 100%;
 	    margin-right: 1px;
@@ -851,6 +956,7 @@ Media Queries
 	    position: relative;
 	    display: flex;
 	    flex-flow: column wrap;
+
 	}
 
 	.footer {
@@ -883,6 +989,14 @@ Media Queries
 /*On screens that are 1045px or less, set the background color to blue*/
 @media screen and (max-width: 1045px) {
 
+	#form{
+		display: none;
+	}
+	.cloth-color{
+	position: absolute;
+    top: 440px;
+	}
+
 	.only-for-phone{
     width: 30px;
     height: 30px;
@@ -892,9 +1006,18 @@ Media Queries
     top: 60px;
 	}
 
+
 	.only-for-phone img{
 		width:100%;
 	}
+
+
+	.phone-form{
+	position: absolute;
+    right: 20px;
+    margin-right: 10px;
+	}
+
 
 	.main-header {
     text-align: center;
@@ -920,7 +1043,6 @@ Media Queries
 	.flex-container > div {
     flex-basis: 300px;
     width: 100%;
-    background-color: #d8d8d8;
     min-height: 480px;
     width: 100%;
     margin-right: 35px;
@@ -929,10 +1051,6 @@ Media Queries
     text-align: center;
     line-height: 75px;
     font-size: 30px;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
     position: relative;
     display: flex;
     flex-flow: column wrap;
@@ -942,6 +1060,10 @@ Media Queries
     display: none;
     top: 10px;
     left: 220px;
+ 	}
+
+ 	.footer{
+ 		padding-bottom: 100px;
  	}
 
 	.footer-nav li {
@@ -1008,6 +1130,10 @@ Media Queries
     background-color: olive;
   }
 
+  .cloth-color{
+  	 top: 280px;
+  }
+
   .basic {
   	display: none;
   }
@@ -1023,7 +1149,6 @@ Media Queries
   .flex-container > div {
     flex-basis: 200px;
     width: 100%;
-    background-color: #d8d8d8;
     min-height: 280px;
     width: 100%;
     margin-right: 35px;
@@ -1032,10 +1157,6 @@ Media Queries
     text-align: center;
     line-height: 75px;
     font-size: 30px;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
     position: relative;
     display: flex;
     flex-flow: column wrap;
@@ -1050,21 +1171,27 @@ Media Queries
     display: none;
  	}
 
-	.circle {
-    display: flex;
-    flex-flow: row nowrap;
-    position: absolute;
-    padding: 10px;
-    left: 400px;
-    top: 450px;
-    display: none;
- 	}
-
 
 }
 
 
 @media screen and (max-width: 649px){
+
+
+	.cloth-color .ui{
+		height: 10px;
+		width: 10px;
+	}
+
+	.cloth-text-1{
+		bottom: -40px;
+	}
+
+	.cloth-text-1 > p {
+		display: block;
+		line-height:10px;
+		font-size:9px;
+	}
 	.main-nav{
 		margin-right: 0;
 	}
@@ -1102,51 +1229,36 @@ Media Queries
 	}
 
 } 
-
-/* On screens that are 485px or less, set the background color to olive */
-@media screen and (max-width: 485px){
-
-	.flex-container > div {
-		flex-basis:153px;
-		margin-right:-50px; 
-	}
-
-    .flex-container{
-	   margin-left: -80px;
-	}
-
-	.cloth-text-6{
-		bottom: -140px;
-	}
-
-	.btn_logo01{
-		width: 150px;
-		padding: 5px 0px;
-	}
-
-	.main-nav a{
-		width:auto;
-
-	}
-
-	.basic{
-		margin: 0;
-		width:200px;
-		justify-content: center;
-	}
-
-	.basic > div{
-		margin: 0;
-	}
-
-
-}
-
 /* On screens that are 500px or less, set the background color to olive */
 @media screen and (max-width: 500px){
 
+	#keyword{
+		font-size:10px;
+	}
+
 	body {
 	    background-color: olive;
+	}
+
+	#parent{
+		margin-bottom:0px;
+	}
+
+	#item > div {
+		margin-left: 0px;
+
+	}
+
+	.cloth-color{
+		 top: 210px;
+	}
+
+	.cloth-text-1 {
+		bottom: 10px;
+	}
+
+    .cloth-text-1 > p{
+		line-height: 0;
 	}
 
 	.content-wrapper .flex-container > div {
@@ -1195,7 +1307,7 @@ Media Queries
     height: 20px;
     display: flex;
     flex-flow: row wrap;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: transparent;
  }
 
 	.main-header {
@@ -1218,8 +1330,8 @@ Media Queries
 	}
 
 	.main-nav {
+	margin-top: -1px;
     width: 100%;
-    margin-top: 2px;
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
@@ -1263,10 +1375,6 @@ Media Queries
 	}
 
 	.text{
-		display:none;
-	}
-
-	.circle{
 		display:none;
 	}
 
@@ -1358,15 +1466,10 @@ Media Queries
     margin-right: 3px;
     margin-bottom: 10px;
     width: 100%;
-    background-color: #d8d8d8;
     min-height: 204px;
     text-align: center;
     justify-content: stretch;
     font-size: 30px;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
     position: relative;
     display: flex;
     flex-flow: column wrap;
@@ -1377,7 +1480,6 @@ Media Queries
  	}
 
  	#items{
- 		height:500px;
  		margin-bottom: 400px;
  	    width: 100%;
     	margin-bottom: 400px;
@@ -1442,13 +1544,8 @@ Media Queries
 		left:0px;
 	}
 
-	.cloth-text-1 > p,
-	.cloth-text-2 > p,
-	.cloth-text-3 > p,
-	.cloth-text-4 > p,
-	.cloth-text-5 > p,
-	.cloth-text-6 > p{
-	  display: inline-block;
+	.cloth-text-1 > p{
+	  display: block;
 	  font-family: NotoSansCJKtc;
 	  font-size: 10px;
 	  font-weight: normal;
@@ -1573,6 +1670,61 @@ Media Queries
     	height:20px;
     }
 }
+
+
+/* On screens that are 485px or less, set the background color to olive */
+@media screen and (max-width: 485px){
+	.main-nav{
+		margin-top: -10px;
+	}
+	
+
+	#parent{
+		margin-bottom:0px;
+	}
+
+	#item > div {
+		margin-left: 0px;
+
+	}
+
+	.flex-container > div {
+		flex-basis:153px;
+		margin-right:-50px; 
+	}
+
+
+	.cloth-text-6{
+		bottom: -140px;
+	}
+
+	.btn_logo01{
+		width: 150px;
+		padding: 5px 0px;
+	}
+
+	.main-nav a{
+		width:auto;
+
+	}
+
+	.basic{
+		margin: 0;
+		width:200px;
+		justify-content: center;
+	}
+
+	.basic > div{
+		margin: 0;
+	}
+
+	.footer{
+ 		padding-bottom: 100px;
+ 	}
+
+
+}
+
 
 
 @media screen and (max-width: 325px){
