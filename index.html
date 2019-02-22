@@ -1,0 +1,417 @@
+<!-- 20190219  -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>STYLiSH</title>
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="main-header">
+				<div class="phone-header">
+					<div class="social">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<div class="phone-search-bar">
+					</div>
+					
+                </div>	<!--/.phone-header--> 
+					<div class="btn_logo01">
+					<a href="#"><img src="img/btn-logo-01.svg"></a>
+					<div class="only-for-phone">
+						<form id="form" class="phone-form">
+							<input type="text" id='serch' name="name" placeholder="  關鍵字">
+						</form>
+					<div id="cursor" style="cursor:pointer">
+					<img src="img/search.png">
+					</div> 
+					</div>				
+				</div>
+
+				<ul class="main-nav">
+					<li><a href="#" style="color:#8b572a" onclick="switchButton(this)">女裝</a></li>
+					<li><div></div></li>
+					<li><a href="#" onclick="switchButton(this)">男裝</a></li>
+					<li><div></div></li>
+					<li><a href="#" onclick="switchButton(this)">配件</a></li>
+				</ul>
+
+				<div class="basic">
+					<form id="form">
+						<input type='text' id='keyword' name='name' placeholder="   關鍵字" >
+						<!-- 放一些點出去後可以 load 畫面ㄧ-->
+<!-- 						<input type="submit" style="background:url("jpg");“/>
+						<form onsubmit="javascript:search()"> -->
+						<div style="cursor:pointer" class="item-1">
+						<img src="img/search.png" onclick="search()">
+					</div>
+					</form>
+					<div><img src="img/cart.png"></div>
+					<div><img src="img/member.png"></div>
+				</div>
+		</header><!--/.main-header--> 
+
+
+<div class="black-bar">
+				</div><!-- black-bar -->
+
+<!--/mobile place--> 
+	<div class="feature-barwrapper">
+			<div class="sub-footerbar bg-color-default">
+				<div class="container">
+					<div class="mobile-feature-bar">
+						<a class="mobile-item" href="#">
+							<div class="mobile-iconbox">
+								<div class="shoopingcart__mobile-iconbox">
+									<img src="img/cart-mobile.png">
+									<p>購物車</p>
+								</div>
+							</div>				
+						</a>
+						<a class="mobile-item" href="#">
+							<div class="mobile-iconbox">
+								<div class="member__mobile-iconbox">
+									<img src="img/member-mobile.png">
+									<p>會員</p>
+								</div>
+							</div>	
+							
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+    <!-- campaign -->
+    <div id="campaigns"></div>
+ <!--    <div class="campaign">
+        <div class="container">
+            <div class="story">
+                於是<br>
+                我也想要給你<br>
+                一個那麼美好的自己。
+                <div class="last-line">
+                    不朽《與自己和好如初》
+                </div>
+            </div>
+
+            <div class="circles">
+                <div class="circle current"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+ -->
+		<div id="parent" class="content-wrapper">
+			<div id="items" class="flex-container">
+<!-- 				<div class="product-1">
+					<div class="new-buy"><p>新品</p></div>
+					<div class="cloth-color-1"></div>
+					<div class="cloth-text-1"><p>後鬆緊牛仔落地寬褲<br>TWD.590</p></div> -->
+	<!-- 			</div>
+
+				<div class="item-product">
+					<div class="contain-div">
+					<div class="qq">
+						<img src="http://18.214.165.31/assets/201807201824/main.jpg">
+					</div>
+					<div class="cloth-color">
+						<div class="ui"></div>
+						<div class="ui"></div>
+						<div class="ui"></div>
+					</div>
+					<div class="cloth-text">
+						<p>前開衩扭結洋裝<p><br>
+					    <p>TWD.690</p>
+					</div>
+				  </div>
+			  </div>
+				</div>
+				<div class="item-3">
+					<div class="cloth-color-3 line-color"></div>
+					<div class="cloth-color-3-1 line-color"></div>
+					<div class="cloth-text-3"><p>涼感垂墜絲滑寬褲</p><p>TWD.430</p></div>
+				</div>
+				<div class="item-4">
+					<div class="cloth-color-4 line-color"></div>
+					<div class="cloth-color-4-1 line-color"></div>
+					<div class="cloth-text-4 line-color"><p>腰鬆緊棉麻褲裙<br>TWD.590</p></div>
+				</div>
+				<div class="item-5">
+					<div class="cloth-color-5 line-color"></div>
+					<div class="cloth-color-5-1 line-color"></div>
+					<div class="cloth-text-5"><p>前開衩扭結洋裝<br>TWD.690</p></div>
+				</div>
+				<div class="item-6">
+					<div class="cloth-color-6 "></div>
+					<div class="cloth-text-6"><p>透肌澎澎連袖防曬上衣<br>TWD.430</p></div>
+				</div>  -->
+			</div> <!--/.flex-container-->
+		</div><!--/.content-wrapper-->
+		<div class="footer">
+			<div class="footer-basic">
+				<ul class="footer-nav">
+					<li id="about-Stylish"><a href="#">關於 Stylish</a></li>
+					<li><div></div></li>
+					<li><a href="#">服務條款</a></li>
+					<li><div></div></li>
+					<li><a href="#">隱私政策</a></li>
+					<li><div></div></li>
+					<li><a href="#">聯絡我們</a></li>
+					<li><div></div></li>
+					<li><a href="#">FAQ</a></li>
+				</ul><!--/.footer-nav-->
+			<div class="footer-social">
+					<div><img src="img/line.png"></div>
+					<div><img src="img/twitter.png"></div>
+					<div><img src="img/facebook.png"></div>
+			</div><!--/.footer-social-->
+			<p>@2018 All right deserved</p>
+		</div><!--/.footer-basic-->
+	</div><!--/.footer-->
+	</div><!--/.wrapper--> 
+</body>
+
+	<script>
+		//* form 功能
+		var form = document.getElementById('form');
+		var page = 0
+		//pageSize 一開始就定義啥都沒有
+		var pageSize = undefined
+
+		//Slide Effect
+		var slideIndex = 1;
+		var slideSize = undefined;
+
+		form.addEventListener('focus', function( event ) {
+ 		 event.target.style.background = '#828282';    
+		}, true);
+
+		form.addEventListener('blur', function( event ) {
+  		event.target.style.background = '';    
+		}, true);
+		
+		function getCampaign() {
+			var url = 'http://18.214.165.31/api/1.0/marketing/campaigns'
+			var req = new XMLHttpRequest();
+			req.addEventListener('load', function(event) {
+				renderCamp(event.target.responseText)
+			})
+			req.open('GET', `${url}`, true);
+			req.send();
+		}
+
+
+		function getDressData(page) {
+			var url = 'http://18.214.165.31/api/1.0/products/all'
+			var req = new XMLHttpRequest();
+			req.addEventListener('load', function(event) {
+				renderDress(event.target.responseText, 'all');
+			})
+
+			//string template，捲軸拿資料
+			req.open('GET', `${url}?paging=${page}`, true);
+			req.send();
+		}
+		//function 轉軸到最底端的時候，拿 web api 的東東
+		function getDistFromBottom () {
+  
+		  var scrollPosition = window.pageYOffset;
+		  var windowSize     = window.innerHeight;
+		  var bodyHeight     = document.body.offsetHeight;
+
+		  return Math.max(bodyHeight - (scrollPosition + windowSize), 0);
+
+		}
+
+		//scroll	
+		document.addEventListener('scroll', function() {
+	        distToBottom = getDistFromBottom();
+	        // console.log('scrolling', getDistFromBottom());
+	        //bottom 的區間時才會做事
+	        if (distToBottom > 0 && distToBottom <= 8888) {
+	          page++;
+	          //page 大於拿到資料的 pageSize 頁數，超過 pageSize 時就會回去 1
+	          if (page > pageSize) {
+	          	page = 1
+	          }
+	          getDressData(page)
+        	}
+		});
+
+		//女裝男裝
+		function switchButton(e) {
+			if (e.innerHTML == '女裝'){
+				document.querySelectorAll('.women').forEach(
+					ele => ele.style.display="")
+				document.querySelectorAll('.men').forEach(
+					ele => ele.style.display="none")
+			} else if (e.innerHTML == '男裝') {
+				document.querySelectorAll('.men').forEach(
+					ele => ele.style.display="")
+				document.querySelectorAll('.women').forEach(
+					ele => ele.style.display="none")
+			}
+		}
+
+		function removeAllChild() {
+			prods = document.getElementById("items");
+			prods.remove()
+			parent = document.getElementById("parent");
+			prods = document.createElement("div")
+			prods.classList.add("flex-container");
+			prods.id = "items";
+			parent.appendChild(prods);
+		}
+
+		function search(e) {
+			var req = new XMLHttpRequest();
+			var keyword = document.getElementById("keyword").value;
+			
+			req.addEventListener('load', function(event) {
+				removeAllChild();
+				renderDress(event.target.responseText);
+			})
+
+			req.open('GET', 'http://18.214.165.31/api/1.0/products/search?keyword='+keyword, true);
+			req.send();
+			
+		}
+		//slideIndex + 減一或加一offset 不能超過 slideSize ，只能取餘數	
+		//function default 值是 1, 在直接呼叫 showSlides() 的情況下預設 offset 的值為 1
+		// 相對而言showSlides(-1) 這時 offset 的值會是 -1
+ 
+		function showSlides(offset=1) {
+			slideIndex = (slideIndex + parseInt(offset))
+			if (slideIndex < 0) {
+				/// 如果是負數，就加上原本的圖片數量，就會滑到要去的那一張
+				slideIndex += slideSize
+			}
+			slideIndex = slideIndex % slideSize
+
+			//先讓所有 campaign 不顯示，只顯示要的
+			document.querySelectorAll('.campaign').forEach(
+					ele => ele.style.display="none")
+
+			document.getElementById(`campaign_${slideIndex}`).style.display=""
+		}
+
+		function renderCamp(data) {
+			data = JSON.parse(data);
+			campaigns = document.getElementById("campaigns");
+			slideSize = data['data'].length
+			for (let i=0; i<slideSize; i++) {
+				let campaign = document.createElement('div')
+				campaign.classList.add('campaign')
+				// id 拿來記第幾個 campaign
+				campaign.id=`campaign_${i}`
+				if (i != 0) {
+					campaign.style.display = "none"
+				}
+
+				//塞 image 給創造出來的 div
+				campaign.style.backgroundImage = `url('http://18.214.165.31/'+ ${data['data'][i]['picture']})`
+
+				let container = document.createElement('div')
+				container.classList.add('container')
+				
+
+				let story = document.createElement('div')
+				story.classList.add('story')
+				// \n 換行 \r 回到那一行開頭。/([\r\n]+)/g regex 會找 \r n 的字詞， + 指多個，g 指所有
+				story.innerHTML = data['data'][i]['story'].replace(/([\r\n]+)/g,"<br>")
+				
+
+				let circles = document.createElement('div')
+				circles.classList.add('circles')
+				for (let j=0; j < data['data'].length; j++) {
+					let circle = document.createElement('div')
+					circle.classList.add('circle')
+				//第 j 個就是 current
+					if (i == j) {
+						circle.classList.add('current')
+					}
+					circles.appendChild(circle)
+				}
+				container.appendChild(story)
+				container.appendChild(circles)
+				campaign.appendChild(container)
+
+				let left = document.createElement('a')
+				//寫了一個 callbackfunction，裡面會執行 showSlides(-1) function，不要它馬上執行
+				left.onclick = () => showSlides(-1)
+				left.textContent = '←'
+				left.classList.add('prev')
+
+				let right = document.createElement('a')
+				right.onclick = () => showSlides(1)
+				right.textContent = '→'
+				right.classList.add('next')
+
+				campaigns.appendChild(campaign)
+				campaigns.appendChild(left)
+				campaigns.appendChild(right)
+			}
+
+		}
+
+		function renderDress(data, kind) {
+			data = JSON.parse(data);
+			//檢查 data 有 paging 時就會把 paging 從 string 轉成 int
+			if (data['paging']) {
+			 	pageSize = parseInt(data['paging'])
+			}
+			prods = document.getElementById("items");
+			for(let i=0; i<data['data'].length; i++){
+				let newItem = document.createElement('div')	
+				newItem.classList.add('white-div')
+
+				//加了一個 class 進去
+				newItem.classList.add(data['data'][i]['category'])
+				// newItem: image
+				//image onclick 後要帶到 product 的頁面 with 
+				let newItem1 = document.createElement('div')
+				newItem1.classList.add('qq')
+				let img = document.createElement('img');
+				img.src = data['data'][i]['main_image'];
+				newItem1.appendChild(img);
+
+				// color
+				let newItem2 = document.createElement('div');
+				newItem2.classList.add('cloth-color')
+				for(let j=0; j< data['data'][i]['colors'].length; j++){
+					let items = document.createElement('div');
+					items.classList.add('ui');
+					items.style.backgroundColor = "#"+data['data'][i]['colors'][j]['code'];
+					newItem2.appendChild(items);
+				}
+
+				
+				// <div class="cloth-text-3"><p>涼感垂墜絲滑寬褲<br>TWD.430</p></div>
+				let newItem4 = document.createElement('div')
+				newItem4.classList.add('cloth-text-1');
+				let p1 = document.createElement('p');
+				let p2 = document.createElement('p');
+				p1.textContent = data['data'][i]['title'] 
+				p2.textContent = "TWD:" + data['data'][i]['price'];
+				newItem4.appendChild(p1);
+				//newItem4.appendChild(document.createElement('br'));
+				newItem4.appendChild(p2);
+
+				newItem.appendChild(newItem1)	
+				newItem.appendChild(newItem2)	
+				newItem.appendChild(newItem4)	
+				prods.appendChild(newItem)
+			}
+		}
+
+		getDressData(1);
+		getCampaign();
+		setInterval(showSlides, 10000);
+	</script>
+</html>

@@ -1,0 +1,329 @@
+<!--product -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>STYLiSH</title>
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./product.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="main-header">
+				<div class="phone-header">
+					<div class="social">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<div class="phone-search-bar">
+					</div>
+                </div>	<!--/.phone-header--> 
+					<div class="btn_logo01">
+					<a href="#"><img src="img/btn-logo-01.svg"></a>
+					<div class="only-for-phone">
+						<form id="form" class="phone-form">
+							<input type="text" id='serch' name="name" placeholder="  關鍵字">
+						</form>
+					<div id="cursor" style="cursor:pointer">
+					<img src="img/search.png">
+					</div> 
+					</div>				
+				</div>
+
+<!-- var men__Button = document.querySelector('.men__Button');
+	var women__Button = document.querySelector('.women__Button');
+	var accessories__Button = document.querySelector('.accessories__Button');
+	var search__Container__Img = document.querySelector(".search__Container__Img");
+	var search__Container__Input = document.querySelector('.search__Container__Input'); -->
+				<ul class="main-nav">
+					<li><a class="women__Button" href="#" style="color:#8b572a" onclick="switchButton(this)">女裝</a></li>
+					<li><div></div></li>
+					<li><a class="men__Button" href="#" onclick="switchButton(this)">男裝</a></li>
+					<li><div></div></li>
+					<li><a class="accessories__Button" a href="#" onclick="switchButton(this)">配件</a></li>
+				</ul>
+
+				<div class="basic">
+					<form id="form">
+						<input class="search__Container__Input" type='text' id='keyword' name='name' placeholder="   關鍵字" >
+						<!-- 放一些點出去後可以 load 畫面ㄧ-->
+<!-- 						<input type="submit" style="background:url("jpg");“/>
+						<form onsubmit="javascript:search()"> -->
+						<div style="cursor:pointer" class="item-1">
+						<img class="search__Container__Img" src="img/search.png" onclick="search()">
+					</div>
+					</form>
+					<div><img src="img/cart.png"></div>
+					<div><img src="img/member.png"></div>
+				</div>
+		</header><!--/.main-header--> 
+
+<div class="black-bar">
+				</div><!-- black-bar -->
+<!--/mobile place--> 
+	<div class="feature-barwrapper">
+			<div class="sub-footerbar bg-color-default">
+				<div class="container">
+					<div class="mobile-feature-bar">
+						<a class="mobile-item" href="#">
+							<div class="mobile-iconbox">
+								<div class="shoopingcart__mobile-iconbox">
+									<img src="img/cart-mobile.png">
+									<p>購物車</p>
+								</div>
+							</div>				
+						</a>
+						<a class="mobile-item" href="#">
+							<div class="mobile-iconbox">
+								<div class="member__mobile-iconbox">
+									<img src="img/member-mobile.png">
+									<p>會員</p>
+								</div>
+							</div>	
+							
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="parent" class="content-wrapper">
+			<div id="items" class="flex-container">
+				 <div class="productPage__Container">
+    <div class="productPage__Container__Sub">
+      <div class="productPage__Container__Sub__Img">
+        <img src="./apiPic/products/product1.jpg">
+      </div>
+      <div class="productPage__Container__Sub__Info">
+        <div class="productPage__Container__Sub__Info__Sub">
+          <p class="productPage__Container__Sub__Sub__Info__Name">前開衩扭結洋裝</p>
+          <p class="productPage__Container__Sub__Sub__Info__ID">03040047</p>
+          <p class="productPage__Container__Sub__Sub__Info__Price">TWD.590</p>
+          <div class="productPage__Container__Sub__Sub__Info__Hr"></div>
+          <div class=" productPage__Container__Sub__Info__Color">
+            <p class="productPage__Container__Sub__Info__Color__Text">顏色 |</p>
+            <div class="productPage__Container__Sub__Info__Color__block"><img style="background-color:black"></div>
+            <div class="productPage__Container__Sub__Info__Color__block"><img style="background-color:black"></div>
+          </div>
+          <div class="productPage__Container__Sub__Info__Size">
+            <div class="productPage__Container__Sub__Info__Color__Size">尺寸 |</div>
+            <div class="productPage__Container__Sub__Info__Size__Size__Block">
+              <p>S</p>
+            </div>
+            <div class="productPage__Container__Sub__Info__Size__Size__Block">
+              <p>M</p>
+            </div>
+            <div class="productPage__Container__Sub__Info__Size__Size__Block">
+              <p>L</p>
+            </div>
+            <div class="productPage__Container__Sub__Info__Size__Size__Block">
+              <p>XL</p>
+            </div>
+          </div>
+          <div class="productPage__Container__Sub__Info__Amount">
+            <duv class="productPage__Container__Sub__Info__Amount__Text noneOnMobile">
+              <p>數量 |</p>
+            </duv>
+            <div class="productPage__Container__Sub__Info__Amount__Container">
+              <div class="productPage__Container__Sub__Info__Amount__Container__Minus">-</div>
+              <div class="productPage__Container__Sub__Info__Amount__Container__Num">1</div>
+              <div class="productPage__Container__Sub__Info__Amount__Container__Plus">+</div>
+            </div>
+          </div>
+          <div class="productPage__Container__Sub__Info__Cart">
+            <p>加入購物車</p>
+          </div>
+          <div class="productPage__Container__Sub__Info__Note">
+            <div class="productPage__Container__Sub__Info__Note__NoResponsibility">
+              <p>*實品顏色一單品照片為主</p>
+            </div>
+            <div class="productPage__Container__Sub__Info__Note__Content">
+              <p>棉100%</p>
+              <p>厚薄：薄</p>
+              <p>彈性：無</p>
+            </div>
+            <div class="productPage__Container__Sub__Info__Note__MadeIn">
+              <p>素材產地/中國</p>
+              <p>加工產地/中國</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="productPage__Container__Detail">
+      <div class="productPage__Container__Detail__Title">
+        <p>細部說明</p>
+        <div class="productPage__Container__Detail__Title__HR"></div>
+      </div>
+      <p class="productPage__Container__Detail__Text">O.N.S is all about options, which is why we took our staple
+        polo shirt
+        and upgraded it with slubby linen jersey, making it even lighter for those who prefer their summer style
+        extra-breezy.</p>
+      <img src="./apiPic/products/product1.jpg" class="productPage__Container__Detail__Pic">
+      <p class="productPage__Container__Detail__Text">O.N.S is all about options, which is why we took our staple
+        polo shirt
+        and upgraded it with slubby linen jersey, making it even lighter for those who prefer their summer style
+        extra-breezy.</p>
+      <img src="./apiPic/products/product1.jpg" class="productPage__Container__Detail__Pic">
+      <p class="productPage__Container__Detail__Text">O.N.S is all about options, which is why we took our staple
+        polo shirt
+        and upgraded it with slubby linen jersey, making it even lighter for those who prefer their summer style
+        extra-breezy.</p>
+      <img src="./apiPic/products/product1.jpg" class="productPage__Container__Detail__Pic">
+    </div>
+  </div>
+
+			</div> <!--/.flex-container-->
+		</div><!--/.content-wrapper-->
+		<div class="footer">
+			<div class="footer-basic">
+				<ul class="footer-nav">
+					<li id="about-Stylish"><a href="#">關於 Stylish</a></li>
+					<li><div></div></li>
+					<li><a href="#">服務條款</a></li>
+					<li><div></div></li>
+					<li><a href="#">隱私政策</a></li>
+					<li><div></div></li>
+					<li><a href="#">聯絡我們</a></li>
+					<li><div></div></li>
+					<li><a href="#">FAQ</a></li>
+				</ul><!--/.footer-nav-->
+			<div class="footer-social">
+					<div><img src="img/line.png"></div>
+					<div><img src="img/twitter.png"></div>
+					<div><img src="img/facebook.png"></div>
+			</div><!--/.footer-social-->
+			<p>@2018 All right deserved</p>
+		</div><!--/.footer-basic-->
+	</div><!--/.footer-->
+	</div><!--/.wrapper--> 
+</body>
+<script>
+	var product__Container = document.querySelector('.product__Container');
+	var men__Button = document.querySelector('.men__Button');
+	var women__Button = document.querySelector('.women__Button');
+	var accessories__Button = document.querySelector('.accessories__Button');
+	var search__Container__Img = document.querySelector(".search__Container__Img");
+	var search__Container__Input = document.querySelector('.search__Container__Input');
+
+
+	accessories__Button.addEventListener('click', () => {
+	  clearInnerHtml();
+	  productXMLRequest('products/accessories?', 0)
+	})
+
+	women__Button.addEventListener('click', () => {
+	  clearInnerHtml();
+	  productXMLRequest('products/women?', 0)
+	})
+
+	men__Button.addEventListener('click', () => {
+	  clearInnerHtml();
+	  productXMLRequest('products/men?', 0)
+	})
+
+	search__Container__Input.addEventListener('keypress', (e) => {
+	  var search__Text = search__Container__Input.value;
+	  if (search__Text) {
+	    if (e.keyCode === 13) {
+	      search__Container__Input.value = '';
+	      clearInnerHtml();
+	      productXMLRequest(`products/search?keyword=${search__Text}`)
+	    }
+	  }
+	})
+
+	var productXMLRequest = function (cata, paging = 0) {
+	  var xhr = new XMLHttpRequest();
+	  xhr.onreadystatechange = () => {
+	    // window.removeEventListener('scroll', () => {
+	    //   var product__Container__Rect = product__Container.getBoundingClientRect();
+	    //   if (document.readyState === 'complete' && product__Container__Rect.bottom < 1000 && currentPage != nextPage) {
+	    //     productXMLRequest(cata, nextPage);
+	    //     currentPage = nextPage;
+	    //   }
+	    // })
+	    if (xhr.readyState === 4 && xhr.status === 200) {
+	      creatElement(xhr.responseText);
+	      var nextPage = JSON.parse(responseText).paging;
+	      var currentPage = 0;
+	      if (typeof (nextPage) === 'number') {
+	        window.addEventListener('scroll', () => {
+	          var product__Container__Rect = product__Container.getBoundingClientRect();
+	          if (document.readyState === 'complete' && product__Container__Rect.bottom < 1000 && currentPage != nextPage) {
+	            productXMLRequest(cata, nextPage);
+	            currentPage = nextPage;
+	          }
+	        })
+	      }
+	    }
+	  }
+
+	  xhr.open('GET', `http://18.214.165.31/api/1.0/${cata}&paging=${paging}`);
+	  console.log(`http://18.214.165.31/api/1.0/${cata}paging=${paging}`);
+
+	  xhr.send();
+	}
+
+	const clearInnerHtml = () => {
+	  product__Container.innerHTML = "";
+	}
+
+	const creatElement = (responseTextCreateElement) => {
+	  if (JSON.parse(responseTextCreateElement)["data"].length === 0) {
+	    var notFound_createElement = document.createElement('h1');
+	    notFound_createElement.appendChild(document.createTextNode("Not Found Any"))
+	    product__Container.appendChild(notFound_createElement);
+	  } else {
+	    for (let i = 0; i < JSON.parse(responseTextCreateElement).data.length; i++) {
+	      page = JSON.parse(responseTextCreateElement).paging
+	      responseText = responseTextCreateElement;
+	      var items = JSON.parse(responseTextCreateElement).data[i];
+	      var imgURL = items.main_image;
+	      var colors = items["colors"]
+	      var colorsAmount = colors.length;
+
+	      var price = items.price;
+	      var title = items.title;
+
+	      var product__Container__Each__CreateElement = document.createElement('div');
+	      product__Container__Each__CreateElement.className = "product__Container__Each";
+
+	      var product__Container__Each__Image__CreateElement = document.createElement('img')
+	      product__Container__Each__Image__CreateElement.src = imgURL;
+	      product__Container__Each__Image__CreateElement.className = 'product__Container__Each__Image';
+
+	      var product__Container__Each__Title__CreateElement = document.createElement('p');
+	      product__Container__Each__Title__CreateElement.className = 'product__Container__Each__Title';
+	      product__Container__Each__Title__CreateElement.appendChild(document.createTextNode(title));
+
+	      var product__Container__Each__Price__CreateElement = document.createElement('p');
+	      product__Container__Each__Price__CreateElement.className = 'product__Container__Each__Price';
+	      product__Container__Each__Price__CreateElement.appendChild(document.createTextNode(price));
+
+	      product__Container__Each__CreateElement.appendChild(product__Container__Each__Image__CreateElement);
+
+	      var product__Container__Each__color__CreateElement = document.createElement('div');
+	      product__Container__Each__color__CreateElement.className = "product__Container__Each__color";
+	      for (let k = 0; k < colorsAmount; k++) {
+	        var product__Container__Each__color__CreateElement__Each = document.createElement('img');
+	        product__Container__Each__color__CreateElement__Each.style.backgroundColor = `#${colors[k].code}`;
+	        product__Container__Each__color__CreateElement.appendChild(product__Container__Each__color__CreateElement__Each);
+	      }
+
+	      product__Container__Each__CreateElement.appendChild(product__Container__Each__color__CreateElement);
+	      product__Container__Each__CreateElement.appendChild(product__Container__Each__Title__CreateElement);
+	      product__Container__Each__CreateElement.appendChild(product__Container__Each__Price__CreateElement);
+
+	      product__Container.appendChild(product__Container__Each__CreateElement);
+	    }
+	  }
+	}
+		console.log(window.location.href);
+		var cons = window.location.href.split("?");
+		console.log(cons);
+		console.log(cons[0].split('&'));
+</script>
+</html>
