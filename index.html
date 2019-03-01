@@ -1,4 +1,4 @@
-<!-- 20190219  -->
+<!-- index  -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,41 +19,41 @@
 					<div class="phone-search-bar">
 					</div>
                 </div>	<!--/.phone-header--> 
-					<div class="btn_logo01">
+					
+
+				<div class="btn_logo01">
 					<a href="#"><img src="img/btn-logo-01.svg"></a>
 					<div class="only-for-phone">
 						<form id="form" class="phone-form">
 							<input type="text" id="" name="name" placeholder="  關鍵字">
 						</form>
-					<div id="cursor" style="cursor:pointer">
-					<img src="img/search.png">
-					</div>
-						        
-    
+						<div id="cursor" style="cursor:pointer">
+							<img src="img/search.png">
+						</div>
 					</div>				
-				</div>
+				</div><!--/.btn_logo01--> 
 
 				<ul class="main-nav">
-					<li><a href="#" style="color:#8b572a" onclick="switchButton(this)">女裝</a></li>
+					<li class="women__Button"><a href="#" style="color:#8b572a" onclick="switchButton(this)">女裝</a></li>
 					<li><div></div></li>
-					<li><a href="#" onclick="switchButton(this)">男裝</a></li>
+					<li class="men__Button"><a href="#" onclick="switchButton(this)">男裝</a></li>
 					<li><div></div></li>
-					<li><a href="#" onclick="switchButton(this)">配件</a></li>
-				</ul>
+					<li class="accessories__Button"><a href="#"onclick="switchButton(this)">配件</a></li>
+				</ul><!--/.main-nav--> 
 
 				<div class="basic">
-					<form id="form">
-						<input type='text' id='keyword' name='name' placeholder="   關鍵字" onkeypress="search()">
-						<!-- 放一些點出去後可以 load 畫面ㄧ-->
-<!-- 						<input type="submit" style="background:url("jpg");“/>
-						<form onsubmit="javascript:search()"> -->
+					<form id="form" onsubmit="return false;">
+						<input type='text' id='keyword' name='name' placeholder="   關鍵字" onkeypress="search(event)">
 						<div style="cursor:pointer" class="item-1">
-						<img src="img/search.png" onclick="search()">
-					</div>
+							<img src="img/search.png" onclick="search(event)">
+						</div>
 					</form>
-					<div><img src="img/cart.png"></div>
+					<div class="cart">
+						<div class="number"></div>
+						<img src="img/cart.png">
+					</div>
 					<div><img src="img/member.png"></div>
-				</div>
+			  </div><!--/.basic--> 
 		</header><!--/.main-header--> 
 
 
@@ -84,16 +84,27 @@
 			</div>
 		</div>
 
-<div class="black-bar">
-</div><!-- black-bar -->		
+<div class="black-bar"></div><!-- black-bar -->		
+    
     <!-- campaign -->
-    <div id="campaigns"></div>
-    <div class="campaign">
-        <div class="container">
+    <div class="campaign__Container">
+   		 <div class="preload"></div>
+   	<!-- 圖片地方 -->
+    <!-- <img src="./apiPic/campaign.jpg" class="campaign__Container__Img"> -->
+	    <div class="campaign__Container__Slogon">
+	    </div>
+	    <!-- 文字地方 -->
+	    <div class='campaign__Container__SlidingBanner'>
+	    </div> 
+	    <!-- 圈圈地方 -->
+  </div>
+
+   <!--<div class="campaign"> -->
+<!--     <div class="container">
             <div class="story">
-                於是<br>
-                我也想要給你<br>
-                一個那麼美好的自己。
+                	於是<br>
+                	我也想要給你<br>
+                	一個那麼美好的自己。
                 <div class="last-line">
                     不朽《與自己和好如初》
                 </div>
@@ -105,15 +116,15 @@
                 <div class="circle"></div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 		<div id="parent" class="content-wrapper">
 			<div id="items" class="flex-container">
-<!-- 				<div class="product-1">
-					<div class="new-buy"><p>新品</p></div>
-					<div class="cloth-color-1"></div>
-					<div class="cloth-text-1"><p>後鬆緊牛仔落地寬褲<br>TWD.590</p></div> -->
-	<!-- 			</div>
+<!-- 			<div class="product-1">
+						<div class="new-buy"><p>新品</p></div>
+						<div class="cloth-color-1"></div>
+						<div class="cloth-text-1"><p>後鬆緊牛仔落地寬褲<br>TWD.590</p></div> -->
+	<!-- 		</div>
 
 				<div class="item-product">
 					<div class="contain-div">
@@ -130,29 +141,35 @@
 					    <p>TWD.690</p>
 					</div>
 				  </div>
-			  </div>
-				</div>
-				<div class="item-3">
+			 	 </div>
+			    </div>
+
+			    <div class="item-3">
 					<div class="cloth-color-3 line-color"></div>
 					<div class="cloth-color-3-1 line-color"></div>
 					<div class="cloth-text-3"><p>涼感垂墜絲滑寬褲</p><p>TWD.430</p></div>
 				</div>
+
 				<div class="item-4">
 					<div class="cloth-color-4 line-color"></div>
 					<div class="cloth-color-4-1 line-color"></div>
 					<div class="cloth-text-4 line-color"><p>腰鬆緊棉麻褲裙<br>TWD.590</p></div>
 				</div>
+
 				<div class="item-5">
 					<div class="cloth-color-5 line-color"></div>
 					<div class="cloth-color-5-1 line-color"></div>
 					<div class="cloth-text-5"><p>前開衩扭結洋裝<br>TWD.690</p></div>
 				</div>
+
 				<div class="item-6">
 					<div class="cloth-color-6 "></div>
 					<div class="cloth-text-6"><p>透肌澎澎連袖防曬上衣<br>TWD.430</p></div>
 				</div>  -->
+
 			</div> <!--/.flex-container-->
 		</div><!--/.content-wrapper-->
+
 		<div class="footer">
 			<div class="footer-basic">
 				<ul class="footer-nav">
@@ -174,56 +191,246 @@
 			<p>@2018 All right deserved</p>
 		</div><!--/.footer-basic-->
 	</div><!--/.footer-->
-	</div><!--/.wrapper--> 
+ </div><!--/.wrapper--> 
 </body>
 
 	<script>
 		//* form 功能
 		var form = document.getElementById('form');
-
 		form.addEventListener('focus', function( event ) {
- 		 event.target.style.background = '#828282';    
+ 		 event.target.style.background = '#gray';    
 		}, true);
 
 		form.addEventListener('blur', function( event ) {
   		event.target.style.background = '';   
-
 		}, true);
-		var page = 0
-		//pageSize 一開始就定義啥都沒有
-		var pageSize = undefined
 
-		//Slide Effect
-		var slideIndex = 1;
-		var slideSize = undefined;
+		//*Need ask
+		//https://github.com/AppWorks-School/API-Doc/blob/master/Stylish/README.md#product-list-api//
+
+		//在下面直接讀出來${category} //為了不要寫死，因為還有男裝女裝
+		var category = 'all' 
+
+		// `` 變數
+		// '' 字串
+		// getCampaign
+		var campaign__Container__SlidingBanner = document.querySelector('.campaign__Container__SlidingBanner');
+		var timeOutId;
+		var preload = document.querySelector('.preload');
+
+		document.addEventListener('DOMContentLoaded', () => {
+		  var xhr = new XMLHttpRequest();
+		  xhr.onreadystatechange = () => {
+		    if (xhr.readyState === 4 && xhr.status === 200) {
+		      let responseText__JSON = JSON.parse(xhr.responseText)['data'];
+		      creatElement__campaign__Container__SlidingBanner__Dot(responseText__JSON);
+		    }
+		  }
+		  xhr.open('GET', `http://18.214.165.31/api/1.0/marketing/campaigns`);
+		  xhr.send();
+		})
+
+
+		//productObj 是從外面傳進來的參數  //productObj 其實就是 responseText__JSON
+		const creatElement__campaign__Container__SlidingBanner__Dot = (productObj) => {
+		  var campaign__Container__SlidingBanner__container = document.createElement('div');
+		  campaign__Container__SlidingBanner__container.className += "campaign__Container__SlidingBanner__container";
+
+		//宣告他是一個空 array
+		  var img__Preload = [];
+
+		//${productObj[numOfCampaign]['picture']}` 印出 productObj 裡頭的值
+		//numOfCampaign 是數值
+		  for (let numOfCampaign = 0; numOfCampaign < productObj.length; numOfCampaign++) {
+		    img__Preload[numOfCampaign] = `http://18.214.165.31${productObj[numOfCampaign]['picture']}`
+		    var campaign__Container__SlidingBanner__Dot__A = document.createElement('a')
+		    var campaign__Container__SlidingBanner__Dot = document.createElement('div')
+		    campaign__Container__SlidingBanner__Dot.className += "campaign__Container__SlidingBanner__Dot";
+		// `image__${numOfCampaign}` = imgae_0、1、2
+		    campaign__Container__SlidingBanner__Dot.className += ` image__${numOfCampaign}`;
+		    campaign__Container__SlidingBanner__Dot__A.appendChild(campaign__Container__SlidingBanner__Dot);
+		    campaign__Container__SlidingBanner__container.appendChild(campaign__Container__SlidingBanner__Dot__A);
+
+		    var preload__Img__Div = document.createElement('div');
+		    //'url('+`${img__Preload[numOfCampaign]}`+')' = `url('${img__Preload[numOfCampaign]}')` 是因為${img__Preload[numOfCampaign]} 是一個變數
+		    preload__Img__Div.style.backgroundImage = `url('${img__Preload[numOfCampaign]}')`
+		    preload.appendChild(preload__Img__Div);
+		  }
+
+		  //在這個 function call 另外一個 function，把東西畫出來
+		  //showDivs(targetImage, productObj)
+		  showDivs(0, productObj);
+
+		  campaign__Container__SlidingBanner.appendChild(campaign__Container__SlidingBanner__container);
+		  const campaign__Container__SlidingBanner__Dot__All = document.querySelectorAll('.campaign__Container__SlidingBanner__Dot');
+
+		  //need ask item function 這一串看不太懂
+		  campaign__Container__SlidingBanner__Dot__All.forEach((item) => {
+		    let classNames = item.className;
+		    var numOfImg = Number(classNames.substr(classNames.length - 1))
+		    item.addEventListener('click', () => {
+		      showDivs(numOfImg, productObj);
+		    })
+		  })
+		}
+
+		//productObj 是剛剛 JSON 轉出 js 可以看的值
+		const showDivs = function (targetImage, productObj) {
+		  clearTimeout(timeOutId);
+		  const campaign__Container = document.querySelector('.campaign__Container');
+		  campaign__Container.style.backgroundImage = `url('http://18.214.165.31${productObj[targetImage%productObj.length]['picture']}')`; //這邊 % 是取於數，讀完最後一張會回到第一張
+
+		 //從 0 開始，每隔 11 秒就會是第二張
+		  changeSlogon(targetImage, productObj);
+		  timeOutId = setTimeout(() => {
+		    showDivs(targetImage + 1, productObj)
+		  }, 11000);
+		}
 		
+		//一樣是取餘數
+		const changeSlogon = function (targetImage, productObj) {
+		  var target = (targetImage % productObj.length);
+		  var slogon = productObj[target]['story'];
 
-		function getDressData(page) {
-			var url = 'http://18.214.165.31/api/1.0/products/all'
+
+		  var campaign__Container__Slogon = document.querySelector('.campaign__Container__Slogon');
+
+		  var campaign__Container__Slogon__Text__1 = document.createElement('p');
+		  campaign__Container__Slogon__Text__1.className = "campaign__Container__Slogon__Text";
+		  //.split 是把字串切斷的意思 `\r\n`是換行
+		 
+		  var campaign__Container__Slogon__Text__1__TextNode = document.createTextNode(slogon.split('\r\n')[0]);
+		  campaign__Container__Slogon__Text__1.appendChild(campaign__Container__Slogon__Text__1__TextNode);
+
+		  var campaign__Container__Slogon__Text__2 = document.createElement('p');
+		  campaign__Container__Slogon__Text__2.className = "campaign__Container__Slogon__Text";
+		  var campaign__Container__Slogon__Text__2__TextNode = document.createTextNode(slogon.split('\r\n')[1]);
+		  campaign__Container__Slogon__Text__2.appendChild(campaign__Container__Slogon__Text__2__TextNode);
+
+		  var campaign__Container__Slogon__Text__3 = document.createElement('p');
+		  campaign__Container__Slogon__Text__3.className = "campaign__Container__Slogon__Text";
+		  var campaign__Container__Slogon__Text__3__TextNode = document.createTextNode(slogon.split('\r\n')[2]);
+		  campaign__Container__Slogon__Text__3.appendChild(campaign__Container__Slogon__Text__3__TextNode)
+
+		  var campaign__Container__Slogon__Source = document.createElement('p');
+		  campaign__Container__Slogon__Source.className = "campaign__Container__Slogon__Source"
+		  var campaign__Container__Slogon__Source__TextNode = document.createTextNode(slogon.split(`\r\n`)[3]);
+		  campaign__Container__Slogon__Source.appendChild(campaign__Container__Slogon__Source__TextNode);
+		  campaign__Container__Slogon.innerHTML = "";
+		  campaign__Container__Slogon.appendChild(campaign__Container__Slogon__Text__1).appendChild(campaign__Container__Slogon__Text__2).appendChild(campaign__Container__Slogon__Text__3).appendChild(campaign__Container__Slogon__Source);
+		}
+
+
+//page 其實這邊有用到 ${page} ，當外面要用這個 function 時，他可能會需要 1、2、3、4 頁
+	function getDressData(page) {
+			var url = `http://18.214.165.31/api/1.0/products/${category}`
 			var req = new XMLHttpRequest();
+	//我拿到 req 的 JSON 檔時，就會把值包在 event 裡傳進這個 function，
 			req.addEventListener('load', function(event) {
-				renderDress(event.target.responseText, 'all');
+				renderDress(event.target.responseText);
 			})
 
 		   //string template，捲軸拿資料
-            req.open('GET', `${url}`, true);
+            req.open('GET', `${url}?paging=${page}`, true);
             req.send();
 		}
 
+				//function 轉軸到最底端的時候，拿 web api 的東東
+		function getDistFromBottom () {
+  
+		  var scrollPosition = window.pageYOffset;
+		  var windowSize     = window.innerHeight;
+		  var bodyHeight     = document.body.offsetHeight;
+
+		  return Math.max(bodyHeight - (scrollPosition), 0);
+
+		}
+
+	//scroll	
+	//每次往下滑會重新跑這段
+	//in the top of script scope
+	// note: these two variable are needed to declare as global
+	// pageSize 要在 getDressData 跟 scroll 的 callback之間溝通
+	// currentPage 必須有記憶性, 如果在 function 中 每次重新宣告則沒有意義
+	let pageSize = undefined;
+	//之後可能會根據 pageSize 做別的事，undefined 就是第一次做事
+	let currentPage = 0;
+
+	document.addEventListener('scroll', function() {
+    var flexContainer = document.querySelector('.flex-container');
+    var product__Container__Rect = flexContainer.getBoundingClientRect();
+    
+    //bottom 的區間時才會做事
+    if (product__Container__Rect.bottom < window.innerHeight) {
+        
+    
+    if (pageSize === undefined) {
+            // first time get dress data
+            // this function will assign a number to global variable, "pageSize"
+         getDressData(0) //call 這個 function 時裡面會設定 pageSize
+        } else if (currentPage < pageSize) {
+            // if the pageSize has been setted already, and current page is not latest page
+          currentPage ++ //只加一次 
+          getDressData(currentPage) 
+        }
+
+    }
+});
+	     //page 大於拿到資料的 pageSize 頁數，超過 pageSize 時就會回去 1
+	     // if (page > pageSize -1) {
+	     // 	page = 0
+         // }          
+      
+
+//為啥 switchButton 裡面要放 e -->	 當有人 call 或觸發 switchButton 時，會把
+//某個值傳進來
+
+
+//為啥又要再設定一次 pageSize 跟 currentPage -->按女裝或男裝時，要重新設定，所以頁面就
+//不能在第二月
+
+
+//這邊的 category 就是ㄓ拿 global 的 category 變數，pageSize 跟 CurrentPage 也是
+
+
 		//女裝男裝
 		function switchButton(e) {
-			if (e.innerHTML == '女裝'){
-				document.querySelectorAll('.women').forEach(
-					ele => ele.style.display="")
-				document.querySelectorAll('.men').forEach(
-					ele => ele.style.display="none")
-			} else if (e.innerHTML == '男裝') {
-				document.querySelectorAll('.men').forEach(
-					ele => ele.style.display="")
-				document.querySelectorAll('.women').forEach(
-					ele => ele.style.display="none")
-			}
+   		 // reset all state as begining
+   		pageSize = undefined
+    	currentPage = 0;
+    
+	    if (e.innerHTML == '女裝') {
+	        category = 'women'
+	    } else if (e.innerHTML == '男裝') {
+	        category = 'men'
+	    } else if (e.innerHTML =='配件'){
+	        category = 'accessories'
+	    }
+	    removeAllChild()
+	    getDressData(0) //設定 0 是因為從首頁開始 //給的 api 首頁是 0 頁
 		}
+
+		//另一種寫法
+// 		function switchButton(e) {
+//    	 // reset all state as begining
+//     pageSize = undefined;
+//     currentPage = 0;
+//     switch(e.innerHTML) {
+//         case '女裝':
+//             category = 'women';
+//             break;
+//         case '男裝':
+//             category = 'men';
+//             break;
+//         case '配件':
+//             category = 'accessories';  
+//             break;
+//         default:
+//             return
+//     }
+//     removeAllChild()
+//     getDressData(0)
+// }
 
 		function removeAllChild() {
 			prods = document.getElementById("items");
@@ -231,8 +438,23 @@
 			parent = document.getElementById("parent");
 			prods = document.createElement("div")
 			prods.classList.add("flex-container");
+//舊的被砍掉，所以再加一次新的 id 值
 			prods.id = "items";
 			parent.appendChild(prods);
+		}
+
+//因為 callback search 的地方有強制要帶參數才會帶 e
+		function search(e) {
+			var req = new XMLHttpRequest();
+			var keyword = document.getElementById("keyword").value;	
+			req.addEventListener('load', function(event) {
+				removeAllChild();
+				renderDress(event.target.responseText);
+			})
+
+			req.open('GET', 'http://18.214.165.31/api/1.0/products/search?keyword='+keyword, true);
+			req.send();
+			
 		}
 
 
@@ -240,7 +462,8 @@
 		//function default 值是 1, 在直接呼叫 showSlides() 的情況下預設 offset 的值為 1
 		// 相對而言showSlides(-1) 這時 offset 的值會是 -1
 
-		function renderDress(data, kind) {
+//
+		function renderDress(data) {
 			data = JSON.parse(data);
 			//檢查 data 有 paging 時就會把 paging 從 string 轉成 int
 			if (data['paging']) {
@@ -248,17 +471,26 @@
 			}
 			prods = document.getElementById("items");
 			for(let i=0; i<data['data'].length; i++){
-				let newItem = document.createElement('div')	
-				newItem.classList.add('white-div')
+
+//首頁區
+
+//當我點了 product 得時候，他要秀出相對應的 id， id 會跳轉到 prodcut 頁
+//product 
+		//原本首頁的
+				let newItem = document.createElement('div')	;
+				newItem.classList.add('white-div');
 
 				//加了一個 class 進去
 				newItem.classList.add(data['data'][i]['category'])
 				// newItem: image
-				let newItem1 = document.createElement('div')
-				newItem1.classList.add('qq')
+				let newItem1 = document.createElement('div');
+				newItem1.classList.add('qq');
+				let aTag = document.createElement('a');
+				aTag.setAttribute('href', `./product.html?id=${data.data[i].id}`);
 				let img = document.createElement('img');
 				img.src = data['data'][i]['main_image'];
-				newItem1.appendChild(img);
+				newItem1.appendChild(aTag);
+				aTag.appendChild(img);
 
 				// color
 				let newItem2 = document.createElement('div');
@@ -266,10 +498,9 @@
 				for(let j=0; j< data['data'][i]['colors'].length; j++){
 					let items = document.createElement('div');
 					items.classList.add('ui');
-					items.style.backgroundColor = "#"+data['data'][i]['colors'][j]['code'];
+					items.style.backgroundColor = "#"+ data['data'][i]['colors'][j]['code'];
 					newItem2.appendChild(items);
 				}
-
 				
 				// <div class="cloth-text-3"><p>涼感垂墜絲滑寬褲<br>TWD.430</p></div>
 				let newItem4 = document.createElement('div')
@@ -281,14 +512,24 @@
 				newItem4.appendChild(p1);
 				//newItem4.appendChild(document.createElement('br'));
 				newItem4.appendChild(p2);
-
 				newItem.appendChild(newItem1)	
 				newItem.appendChild(newItem2)	
 				newItem.appendChild(newItem4)	
 				prods.appendChild(newItem)
 			}
 		}
+		// initial catehgory is 'all'
+		//網頁剛出來的時候把他叫出來
+		getDressData(0);
 
-		getDressData(1);
+		const cart = document.querySelector(".cart");
+		cart.addEventListener('click', () => {
+          window.location = "./cart.html";
+        });
+
+		const shoopingcart = document.querySelector(".shoopingcart__mobile-iconbox");
+		shoopingcart.addEventListener('click', () => {
+        window.location = "./cart.html";
+        });
 	</script>
 </html>

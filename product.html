@@ -1,0 +1,187 @@
+<!--product -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>STYLiSH</title>
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./product.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="main-header">
+				<div class="phone-header">
+					<div class="social">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<div class="phone-search-bar">
+					</div>
+                </div>	<!--/.phone-header--> 
+
+				<div class="btn_logo01">
+					<a href="#"><img src="img/btn-logo-01.svg"></a>
+					<div class="only-for-phone">
+						<form id="form" class="phone-form">
+							<input type="text" id='serch' name="name" placeholder="  關鍵字">
+						</form>
+					<div id="cursor" style="cursor:pointer">
+					<img src="img/search.png">
+					</div> 
+					</div>				
+				</div>
+
+				<ul class="main-nav">
+					<li><a class="women__Button" href="#" style="color:#8b572a" onclick="switchButton(this)">女裝</a></li>
+					<li><div></div></li>
+					<li><a class="men__Button" href="#" onclick="switchButton(this)">男裝</a></li>
+					<li><div></div></li>
+					<li><a class="accessories__Button" a href="#" onclick="switchButton(this)">配件</a></li>
+				</ul>
+
+				<div class="basic">
+					<form id="form">
+						<input class="search__Container__Input" type='text' id='keyword' name='name' placeholder="   關鍵字" >
+						<div style="cursor:pointer" class="item-1">
+							<img class="search__Container__Img" src="img/search.png" onclick="search()">
+						</div>
+					</form>
+					<div class="cart">
+						<div class="number"></div>
+						<img src="img/cart.png">
+					</div>
+					<div><img src="img/member.png"></div>
+			  </div>
+		</header><!--/.main-header--> 
+
+<div class="black-bar"></div><!-- black-bar -->
+
+<!--/mobile place--> 
+	<div class="feature-barwrapper">
+			<div class="sub-footerbar bg-color-default">
+				<div class="container">
+					<div class="mobile-feature-bar">
+						<a class="mobile-item" href="#">
+							<div class="mobile-iconbox">
+								<div class="howManu">
+								</div>
+								<div class="shoopingcart__mobile-iconbox">
+									<img class="mainImg" src="img/cart-mobile.png">
+									<p>購物車</p>
+								</div>
+							</div>				
+						</a>
+						<a class="mobile-item" href="#">
+							<div class="mobile-iconbox">
+								<div class="member__mobile-iconbox">
+									<img class="mainImg" src="img/member-mobile.png">
+									<p>會員</p>
+								</div>
+							</div>	
+							
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="parent" class="content-wrapper">
+			<div id="items" class="flex-container">
+				 <div class="productPage__Container">
+   				 	<div class="productPage__Container__Sub">
+      					<div class="productPage__Container__Sub__Img">
+        					<img class="mainlyImg" >
+      					</div>
+      
+      				<div class="productPage__Container__Sub__Info">
+        				<div class="productPage__Container__Sub__Info__Sub">
+          					<p class="productPage__Container__Sub__Sub__Info__Name"></p>
+          					<p class="productPage__Container__Sub__Sub__Info__ID"></p>
+          					<p class="productPage__Container__Sub__Sub__Info__Price"></p>
+          					<div class="productPage__Container__Sub__Sub__Info__Hr"></div>
+
+         			 <div class="color_true">
+         	 			<div class="productPage__Container__Sub__Info__Color">
+            				<p class="productPage__Container__Sub__Info__Color__Text">顏色 |</p>
+          				</div>
+           			</div>
+          		<div class="productPage__Container__Sub__Info__Size">
+            		<div class="productPage__Container__Sub__Info__Color__Size">尺寸 |</div>
+           		 </div>
+         		 </div>
+          		<div class="productPage__Container__Sub__Info__Amount">
+            		<div class="productPage__Container__Sub__Info__Amount__Text noneOnMobile">
+              			<p>數量 |</p>
+            	</div>
+            
+            	<div class="productPage__Container__Sub__Info__Amount__Container">
+             		 <div class="productPage__Container__Sub__Info__Amount__Container__Minus" style="cursor:pointer">-</div>
+              		<div class="productPage__Container__Sub__Info__Amount__Container__Num">1</div>
+              		<div class="productPage__Container__Sub__Info__Amount__Container__Plus" style="cursor:pointer">+</div>
+            	</div>
+          		</div>
+          
+          		<div class="productPage__Container__Sub__Info__Cart" id="clickMe" style="cursor:pointer">
+            		<p>加入購物車</p>
+          		</div>
+         
+         	 <div class="productPage__Container__Sub__Info__Note">
+            	<div class="productPage__Container__Sub__Info__Note__NoResponsibility">
+             		 <p></p>
+            	</div>
+            
+            <div class="productPage__Container__Sub__Info__Note__Content">
+              <p></p>
+              <p></p>
+              <p></p>
+            </div>
+            
+            <div class="productPage__Container__Sub__Info__Note__MadeIn">
+              <p class="materialPlace"></p>
+              <p class="processPlace"></p>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="productPage__Container__Detail">
+      <div class="productPage__Container__Detail__Title">
+        <p>細部說明</p>
+        <div class="productPage__Container__Detail__Title__HR"></div>
+      </div>
+     	<p class="productPage__Container__Detail__Text"></p>
+      	<img src="" class="productPage__Container__Detail__Pic">
+   	 </div>
+	</div>
+</div> <!--/.flex-container-->
+</div><!--/.content-wrapper-->
+		<div class="footer">
+			<div class="footer-basic">
+				<ul class="footer-nav">
+					<li id="about-Stylish"><a href="#">關於 Stylish</a></li>
+					<li><div></div></li>
+					<li><a href="#">服務條款</a></li>
+					<li><div></div></li>
+					<li><a href="#">隱私政策</a></li>
+					<li><div></div></li>
+					<li><a href="#">聯絡我們</a></li>
+					<li><div></div></li>
+					<li><a href="#">FAQ</a></li>
+				</ul><!--/.footer-nav-->
+			<div class="footer-social">
+					<div><img src="img/line.png"></div>
+					<div><img src="img/twitter.png"></div>
+					<div><img src="img/facebook.png"></div>
+			</div><!--/.footer-social-->
+			<p>@2018 All right deserved</p>
+		</div><!--/.footer-basic-->
+	</div><!--/.footer-->
+</div><!--/.wrapper--> 
+</body>
+<script src='localstorage.js'></script>
+<script src='product.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</html>

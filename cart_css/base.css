@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+
+
+
+input[type=number]:focus {
+  outline: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.content-wrapper{
+  -webkit-justify-content:0;
+}
+
+.product-quantity-title,
+.product-unit-price-title,
+.product-total-title
+{
+  flex:0.1;
+}
+
+.phone-titles{
+  display: flex;
+    position: absolute;
+    top: -25px;
+    justify-content: inherit;
+    width: inherit;
+
+}
+
+.phone-titles > div{
+  font-size: 12px;
+}
+
+.product-blocks{
+    display: flex;
+    align-content: center;
+    justify-content: center;  
+    flex-direction: column;
+}
+
+.numberRight{
+  display: inherit;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: inherit;
+    width: 250px;
+  }  
+
+
+#cursor{
+  position: absolute;
+  bottom: 18px;
+}
+
+#cursor img {
+  width: 100%;
+  min-width: 30px;
+}
+
+
+.main-header a {
+  padding: 10px 15px;
+  letter-spacing: 10px;
+}
+
+.Totalprice{
+  text-align: center;
+}
+
+.Singleprice{
+  text-align: center;
+}
+
+.QTYselect{
+  background-color: #80808026;
+  height: 22px;
+  border: black 1px solid;
+  width: 50px;
+}
+
+.dressContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-end: 100px;
+}
+
+.TextContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 12px;
+    line-height: 35px;
+    width: 30vw;
+}
+
+.TextColor{
+  margin-top: 10px;
+}
+
+.Imgbox{
+    width: 114px;
+    height: 151.5px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.Imgbox > img {
+     width: 114px;
+}
+
+.btn_logo01 {
+    padding: 0;
+    margin-left: 15px;
+}
+.btn_logo01 img {
+        min-width: 70px;
+}
+
+
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: -13px;
+}
+
+.main-nav li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.main-nav li  a{
+    font-size:16px;
+}
+
+.main-nav li > div {
+  top:5px;
+  height: 16px;
+}
+
+.main-header{
+  justify-content: flex-start;
+  align-content: center;
+  flex-flow: row nowrap;
+  height: 15vh;
+}
+
+
+
+.basic{
+  width: 40vw;
+  flex-flow: row nowrap;
+}
+
+.footer-basic {
+    margin-left:0;
+  }
+
+  .footer-nav li {
+    margin-right: 0;
+  }

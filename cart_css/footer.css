@@ -1,0 +1,168 @@
+body {
+  padding-bottom: 60px;
+}
+
+.sticky-footer {
+  background-color: #313538;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+}
+
+.sticky-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.sticky-item:not(:last-child)::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  font-weight: 100;
+  font-size: 20px;
+  color: #828282;
+}
+
+.sticky-item-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+}
+
+.sticky-item-img-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.cart-button-mobile::after {
+  content: attr(data-counts);
+  position: absolute;
+  padding: 2px 6px;
+  font-size: 10px;
+  color: #FFF;
+  vertical-align: text-top;
+  white-space: nowrap;
+  text-align: center;
+  text-shadow: none;
+  background-clip: padding-box;
+  background-color: #EC5252;
+  border: 2px solid #FFF;
+  border-radius: 15px;
+}
+
+footer {
+  padding: 23px 24px 20px 40px;
+  background-color: #313538;
+}
+
+.footer-nav-links {
+  display: flex;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.footer-nav a {
+  color: #f5f5f5;
+  margin-bottom: 8px;
+  font-weight: 300;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 24px;
+}
+
+.links img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.links img:not(:first-child) {
+  margin-left: 14px;
+}
+
+.copyrights {
+  color: #828282;
+  font-size: 10px;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding-bottom: 0;
+  }
+
+  .sticky-footer {
+    display: none;
+  }
+
+  footer {
+    padding: 33px 32px 32px;
+  }
+
+  .footer-wrapper {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-nav-links {
+    width: 100%;
+    align-items: center;
+  }
+
+  .footer-nav {
+    font-size: 16px;
+  }
+
+  .footer-nav a {
+    width: 130px;
+    text-align: center;
+    margin-bottom: unset;
+    position: relative;
+  }
+
+  .footer-nav a:hover {
+    color: #c49871;
+  }
+
+  .footer-nav a:not(:last-child)::after {
+    content: '|';
+    position: absolute;
+    right: 0;
+    color: #f5f5f5 !important;
+  }
+
+  .links {
+    margin-right: 30px;
+  }
+
+  .links img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .links img:not(:first-child) {
+    margin-left: 30px;
+  }
+
+  .copyrights {
+    font-size: 12px;
+  }
+}

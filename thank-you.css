@@ -1,0 +1,128 @@
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  max-width: 90%;
+  position: relative;
+  background: #fff;
+  border-radius: .28571429rem;
+  transition: box-shadow .1s ease, transform .1s ease;
+  box-shadow: 0 0 0 1px #d4d4d5, 0 2px 4px 0 rgba(34,36,38,.12), 0 2px 10px 0 rgba(34,36,38,.15);
+}
+
+.card-header {
+  padding: 15px 40px;
+  border-bottom: 1px solid #d4d4d5;
+}
+
+.header-img {
+  height: 30px;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 40px 10px;
+}
+
+@keyframes check {
+  0% {
+      height: 0;
+      width: 0;
+  }
+
+  33.3333% {
+      width: 40px;
+      height: 0;
+  }
+}
+
+.checkmark.active {
+  width: 130px;
+  height: 160px;
+  padding: 50px 60px 0 0;
+  margin-bottom: -60px;
+}
+
+.checkmark.active:after {
+  transform: scaleX(-1) rotate(135deg);
+  transform-origin: left top;
+  border-right: 30px solid #24b663;
+  border-top: 30px solid #24b663;
+  content: '';
+  display: block;
+  height: 80px;
+  width: 40px;
+  animation: check .8s;
+}
+
+@keyframes failed-left {
+  0% {
+    height: 0;
+  }
+  45% {
+    height: 28px;
+  }
+}
+
+@keyframes failed-right {
+  0% {
+    height: 0;
+  }
+  55% {
+    height: 0;
+  }
+  100% {
+    height: 28px;
+  }
+}
+
+.crossmark.active {
+  width: 110px;
+  height: 110px;
+  position: relative;
+  margin: -20px -50px 20px 0;
+}
+
+.crossmark.active::before,
+.crossmark.active::after {
+  background: #c53b00;
+  content: '';
+  display: block;
+  height: 130px;
+  position: absolute;
+  transform-origin: 10px 50px;
+  width: 20px;
+}
+
+.crossmark.active::before {
+  animation: failed-left .8s ease;
+  transform: translate(7px, 9px) rotate(-45deg);
+}
+
+.crossmark.active::after {
+  animation: failed-right .8s ease;
+  transform: translate(26px, 7px) rotate(45deg);
+}
+
+.meta {
+  display: none;
+  margin-top: 40px;
+  color: rgba(0,0,0,.68);
+  font-size: 22px;
+}
+
+.meta.active {
+  display: block;
+}
+
+.description {
+  color: rgba(0,0,0,.4);
+  font-size: 16px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Thank You</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="banner.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="thank-you.css">
+</head>
+
+<body>
+  <header>
+    <img src="./img/logo.png" alt="logo of STYLiSH" class="logo" />
+    <nav class="main-nav">
+      <ul>
+        <li class="womenTab"><a href="index.html?category=women">女裝</a></li>
+        <li class="menTab"><a href="index.html?category=men">男裝</a></li>
+        <li class="accessoriesTab"><a href="index.html?category=accessories">配件</a></li>
+      </ul>
+    </nav>
+    <div class="header-right-wrapper">
+      <input type="text" class="search-input" />
+      <a href="cart.html" class="cart-button">
+        <img src="./img/cart.png" alt="cart icon" />
+      </a>
+      <a href="member.html" class="member-button">
+        <img src="./img/member.png" alt="member icon" />
+      </a>
+    </div>
+    <div class="search-button"></div>
+  </header>
+
+  <nav class="main-nav-mobile">
+    <ul>
+      <li class="womenTab"><a href="index.html?category=women">女裝</a></li>
+      <li class="menTab"><a href="index.html?category=men">男裝</a></li>
+      <li class="accessoriesTab"><a href="index.html?category=accessories">配件</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="card">
+      <div class="card-header">
+        <img src="./img/logo.png" alt="logo of STYLiSH" class="header-img">
+      </div>
+      <div class="content">
+        <h1 class="header"></h1>
+        <div class="checkmark"></div>
+        <div class="crossmark"></div>
+        <div class="meta">ORDER NUMBER: <span class="order-number"></span></div>
+        <p class="description"></p>
+      </div>
+    </div>
+  </main>
+
+  <div class="sticky-footer">
+    <div class="sticky-item">
+      <a href="cart.html" class="sticky-item-wrapper">
+        <div class="sticky-item-img-wrapper cart-button-mobile">
+          <img src="img/cart-mobile.png" alt="shopping cart icon" />
+        </div>
+        <span>購物車</span>
+      </a>
+    </div>
+    <div class="sticky-item">
+      <a href="member.html" class="sticky-item-wrapper">
+        <div class="sticky-item-img-wrapper">
+          <img src="img/member-mobile.png" alt="member icon" />
+        </div>
+        <span>會員</span>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-wrapper">
+      <div class="footer-nav-links">
+        <nav class="footer-nav">
+          <a href="#">關於 Stylish</a>
+          <a href="#">聯絡我們</a>
+          <a href="#">服務條款</a>
+          <a href="#">FAQ</a>
+          <a href="#">隱私政策</a>
+        </nav>
+        <div class="links">
+          <img src="img/line.png" alt="line links" />
+          <img src="img/twitter.png" alt="twitter links" />
+          <img src="img/facebook.png" alt="facebook links" />
+        </div>
+      </div>
+      <div class="copyrights">&copy; 2018. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/shared/api.js"></script>
+  <script src="js/shared/helper.js"></script>
+  <script src="js/shared/initialize.js"></script>
+  <script src="js/shared/bindSearchInputAndButtonEvent.js"></script>
+  <script>
+    const { orderNumber } = getParams();
+    const header = document.querySelector('.header');
+    const orderNumberSelector = document.querySelector('.order-number');
+    const checkmark = document.querySelector('.checkmark');
+    const crossmark = document.querySelector('.crossmark');
+    const meta = document.querySelector('.meta');
+    const description = document.querySelector('.description');
+    let headerText = '';
+    let descriptionText = '';
+    if (orderNumber) {
+      checkmark.classList.add('active');
+      meta.classList.add('active');
+      orderNumberSelector.textContent = orderNumber;
+      headerText = `THANK YOU!`;
+      descriptionText = `Thank you for shopping with us!`;
+    } else {
+      crossmark.classList.add('active');
+      document.querySelector('.meta').textContent = '';
+      headerText = `Oops! Something error.`;
+      descriptionText = `Sorry, a problem occurred. Please try later!`;
+    }
+    header.textContent = headerText;
+    description.textContent = descriptionText;
+  </script>
+</body>
+
+</html>
