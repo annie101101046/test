@@ -1,0 +1,763 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"subm",
+				"submitButton"
+			],
+			[
+				"pars",
+				"parseInt"
+			],
+			[
+				"sh",
+				"shippingFee"
+			],
+			[
+				"tota",
+				"totalFee"
+			],
+			[
+				"shi",
+				"shipping-fee"
+			],
+			[
+				"totalP",
+				"totalPriceBelow"
+			],
+			[
+				"var",
+				"var"
+			],
+			[
+				"ma",
+				"margin-right\tproperty"
+			],
+			[
+				"QTY",
+				"QTYselect"
+			],
+			[
+				"in",
+				"innerHTML"
+			],
+			[
+				"ge",
+				"getElementById"
+			],
+			[
+				"q",
+				"querySelector"
+			],
+			[
+				"dre",
+				"dressContainer"
+			],
+			[
+				"get",
+				"getAttribute"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"cos",
+				"console"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"In",
+				"innerHTML"
+			],
+			[
+				"colo",
+				"color_code"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"delet",
+				"deleteImg"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"cur",
+				"currentAmount"
+			],
+			[
+				"cu",
+				"currentAmount"
+			],
+			[
+				"cart",
+				"cartButton"
+			],
+			[
+				"ca",
+				"cartButton"
+			],
+			[
+				"si",
+				"sizesSelect"
+			],
+			[
+				"mar",
+				"margin-right\tproperty"
+			],
+			[
+				"cla",
+				"className"
+			],
+			[
+				"colorb",
+				"colorBoxBorder"
+			],
+			[
+				"ba",
+				"background-color\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"se",
+				"setAttribute"
+			],
+			[
+				"ap",
+				"appendChild"
+			],
+			[
+				"pag",
+				"pageSize"
+			],
+			[
+				"fle",
+				"flexContainer"
+			],
+			[
+				"flex",
+				"flex-container"
+			],
+			[
+				"html",
+				"innerHTML"
+			],
+			[
+				"margin",
+				"margin-top\tproperty"
+			],
+			[
+				"font",
+				"font-family\tproperty"
+			],
+			[
+				"fon",
+				"font-family\tproperty"
+			],
+			[
+				"pa",
+				"padding-bottom\tproperty"
+			],
+			[
+				"tex",
+				"text-align\tproperty"
+			],
+			[
+				"onc",
+				"onclick\tAttr"
+			],
+			[
+				"ali",
+				"align-items\tproperty"
+			],
+			[
+				"min",
+				"min-height\tproperty"
+			],
+			[
+				"m",
+				"margin-right\tproperty"
+			],
+			[
+				"al",
+				"align-items\tproperty"
+			],
+			[
+				"ad",
+				"appendChild"
+			],
+			[
+				"class",
+				"class"
+			],
+			[
+				"all",
+				"allChild"
+			],
+			[
+				"new",
+				"newItem1"
+			],
+			[
+				"po",
+				"position\tproperty"
+			],
+			[
+				"margi",
+				"margin-right\tproperty"
+			],
+			[
+				"margin-",
+				"margin-right\tproperty"
+			],
+			[
+				"max",
+				"max-width\tproperty"
+			],
+			[
+				"borde",
+				"border-radius\tproperty"
+			],
+			[
+				"marg",
+				"margin-right\tproperty"
+			],
+			[
+				"bo",
+				"border-color\tproperty"
+			],
+			[
+				"mi",
+				"min-height\tproperty"
+			],
+			[
+				"le",
+				"left\tproperty"
+			],
+			[
+				"di",
+				"display\tproperty"
+			],
+			[
+				"inl",
+				"inline-block\tdisplay"
+			],
+			[
+				"wi",
+				"width\tproperty"
+			],
+			[
+				"inline",
+				"inline-block\tdisplay"
+			],
+			[
+				"pad",
+				"padding\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"he",
+				"height\tproperty"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"p",
+				"padding\tproperty"
+			],
+			[
+				"ds",
+				"display\tproperty"
+			],
+			[
+				"box",
+				"box-sizing\tproperty"
+			],
+			[
+				"li",
+				"line-height\tproperty"
+			],
+			[
+				"padd",
+				"padding\tproperty"
+			],
+			[
+				"src",
+				"src\tAttr"
+			],
+			[
+				"bord",
+				"border-radius\tproperty"
+			],
+			[
+				"bor",
+				"border-color\tproperty"
+			],
+			[
+				"fl",
+				"flex-wrap\tproperty"
+			],
+			[
+				"paddin",
+				"padding-right\tproperty"
+			],
+			[
+				"border",
+				"border-color\tproperty"
+			],
+			[
+				"lef",
+				"padding-left\tproperty"
+			],
+			[
+				"spa",
+				"space-between\tjustify-content"
+			],
+			[
+				"te",
+				"text-decoration\tproperty"
+			],
+			[
+				"fo",
+				"font-style\tproperty"
+			],
+			[
+				"f",
+				"FF7D12"
+			],
+			[
+				"top",
+				"top\tproperty"
+			],
+			[
+				"newT",
+				"newTd"
+			],
+			[
+				"resp",
+				"responseText"
+			],
+			[
+				"xhttp",
+				"xhttp"
+			],
+			[
+				"cal",
+				"callinFromSomeone"
+			],
+			[
+				"pro",
+				"processUserInput"
+			],
+			[
+				"de",
+				"delayedAlert"
+			],
+			[
+				"del",
+				"delayedResult"
+			],
+			[
+				"Re",
+				"result"
+			],
+			[
+				"delay",
+				"delayTime"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "//cart 的 js\n\n//抓資料\nconst HOST_NAME = '18.214.165.31';\nconst API_VERSION = '1.0'\n// http://${HOST_NAME}/assets/${id}/main.jpg\n\n//拿庫存\n// id of item\nconst getStock = (id, size, color) => {\n\tconst url = `http://${HOST_NAME}/api/${API_VERSION}/products/details?id=${id}`;\n\t// 去拿了 url 拿到結果，url 拿到的結果就變成 response 把它轉成 json 檔，再把 json 檔的值傳給 data\n\t// promise\n\treturn fetch(url)\n\t.then((res) => res.json())\n\t.then((data) => data['data']['variants']) // object 的 property 可以用 array 的方式獲取\n\t.then((variants) => variants.filter( // for each 只要滿足下面條件的, filter 出來的結果會是一個 array\n\t\t(variant) => variant['color_code'] === color && variant['size'] === size))\n\t.then((variants) => variants[0]['stock'])\n}\n\n\n\n//改數量\nconst editQty = (id, color, size, newQty) => {\n\tvar list = JSON.parse(localStorage.getItem('list')) || [];\n\tfor (let item of list) {\n\t\tif(item.id == id && item.color == color && item.size == size) {\n\t\t\t// 找到所有條件都符合的 item\n\n\t\t\tgetStock(id, size, color) // 使用 getStock 來找到庫存, 但因為他是 fetch then 的結構 ( promise )\n\t\t\t.then((stock) => {        // 所以要繼續 then 下去, stock 承接 .then((variants) => variants[0]['stock'])\n \t\t\t\tconsole.log(stock)    // 所得到的值\n\t\t\t\tif (newQty <= stock) {   \n\t\t\t\t\titem.qty = newQty    // 更新 qty\n\t\t\t\t\tlocalStorage.setItem('list', JSON.stringify(list)) // 因為上面的改動只有在 memory 中進行, \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t// 為了讓 localstorage 也同步 所以要 轉 json string 存回去\n\t\t\t\t\tconst totalPriceId = `total_${id}_${color}_${size}`;\n\t\t\t\t\ttotalPrice = document.getElementById(totalPriceId);\n\t\t\t\t\ttotalPrice.innerHTML = item['price'] * newQty;\n\t\t\t\t\tUpdateTotalPrice(list);\n\t\t\t\t\treturn true;\n\t\t\t\t} else {\n\t\t\t\t\treturn false;\n\n\t\t\t\t}\n\t\t\t})\n\t\t}\n\t}\n}\n\n//算底下的總價格 （網頁一開始要有值，然後更改數量後又要有值，就很適合寫成 function)\nfunction UpdateTotalPrice(list){\nvar totalPriceBelow = 0;\n    for( var r=0; r < list.length; r++){\n\ttotalPriceBelow += list[r]['qty'] *  list[r]['price'];\n\t}\n\tvar total = document.getElementById('total');\n\ttotal.innerHTML = totalPriceBelow;\n\tvar shippingFee = document.getElementById('shipping-fee');\n\tshippingFee.innerHTML = '30';\n\tvar totalFee = document.getElementById('total-fee');\n\ttotalFee.innerHTML = parseInt(total.innerHTML, 10) + parseInt(shippingFee.innerHTML, 10);\n}\n\n\n//移除商品\nconst removeItem = (id, color, size) => {\n\tvar list = JSON.parse(localStorage.getItem('list')) || [];\n\t// 運用 filter 找到 id color size 不等於的 item 組成新的 list (要刪除以外的 item 全部選出來)\n\tnewList = list.filter((item) => item.id != id || item.color != color || item.size != size)\n\tlocalStorage.setItem('list', JSON.stringify(newList))\n}\n\n\n\n//render 出來\nconst printProductDetails = () => {\n\t//把資料從 localStorage 撈出來，放到 list 這個變數裡\n\tvar list = JSON.parse(localStorage.getItem('list')) || [];\n\tUpdateTotalPrice(list); //\t先印出總價格\n\tconst layout = document.querySelector('.product-blocks')\n    for (let i = 0; i < list.length; i++) {\n    \t\tconst divider = document.createElement('div')\n    \t\tdivider.setAttribute('class', 'divider');\n    \t\tconst dressContainer = document.createElement('div')\n    \t\tdressContainer.id = `${list[i]['id']}_${list[i]['color']}_${list[i]['size']}`\n    \t\tdressContainer.setAttribute('class', 'dressContainer');\n\t        const dressPicture = document.createElement('div');\n\t        dressPicture.setAttribute('class', 'Imgbox');\n\t        const img = document.createElement('img');\n\t        //image 放進來\n\t        img.src=`http://${HOST_NAME}/assets/${list[i]['id']}/main.jpg`;\n\n\t    \tconst TextContainer = document.createElement('div');\n\t    \tTextContainer.setAttribute('class', 'TextContainer');\n\t        const TextCloth = document.createElement('div');\n\t        TextCloth.innerHTML = list[i]['name'];\n\t        const TextNumber = document.createElement('div');\n\t        TextNumber.innerHTML = list[i]['id'];\n\t        const TextColor = document.createElement('div');\n\t        TextColor .setAttribute('class', 'TextColor');\n\t        TextColor.innerHTML = '顏色 | #' + list[i]['color'];\n\t        const TextSize = document.createElement('div');\n\t        TextSize.innerHTML = '尺寸 | ' + list[i]['size'];\n\n\t        // 產生 select 的 option\n\t        // 根據 getStock 的 結果產生 (是 promise 所以要用 then 去包)\n\t        const numberRight = document.createElement('div');\n\t        numberRight.setAttribute('class', 'numberRight');\n\t        const QTY = document.createElement('select');\n\t        QTY.setAttribute('class', 'QTYselect');\n\t        QTY.setAttribute('_id', list[i]['id']) // 因為要避免跟 html 的 id 衝突\n\t        QTY.setAttribute('color', list[i]['color'])\n\t        QTY.setAttribute('size', list[i]['size'])\n\n            // 數值改變才會做事\n            QTY.onchange = (e) => {\n                let target = e.target\n                console.log(target.value)\n                editQty(target.getAttribute('_id'), target.getAttribute('color'),\n                        target.getAttribute('size'), target.value) // 在這function (editQty) 內差一行更新 total price\n            } \n\n            // 產生 select 的 option\n            // 根據 getStock 的 結果產生 (是 promise 所以要用 then 去包)\n            getStock(list[i]['id'], list[i]['size'], list[i]['color'])\n            .then((stock) => {\n            \tconsole.log(list[i]);\n                // 0 ~  個 option\n                for (let k = 0; k < stock; k++) {\n                    const opt = document.createElement('option')\n                    if (k + 1 == list[i]['qty']) { \n\t\t\t\t\t\topt.selected=\"selected\";\n\t\t\t\t\t}\n                    opt.innerHTML = k + 1 // 因為從 0 開始\n                    QTY.appendChild(opt)\n                }\n            }) \n\t        \n            const phonetitles = document.createElement('div');\n            phonetitles.setAttribute('class', 'phone-titles');\n            const phone_product_quantity = document.createElement('div');\n            phone_product_quantity.setAttribute('class', 'phone-product-quantity-title');\n            phone_product_quantity.innerHTML = '數量';\n            const phone_product_unit = document.createElement('div');\n            phone_product_unit.setAttribute('class', 'phone-product-unit-price-title');\n            phone_product_unit.innerHTML = '單價';\n            const phone_product_total = document.createElement('div');\n            phone_product_total.setAttribute('class', 'phone-product-total-title');\n            phone_product_total.innerHTML = '小計';\n\t        const Singleprice = document.createElement('div');\n\t        Singleprice.setAttribute('class', 'Singleprice');\n\t        Singleprice.innerHTML = list[i]['price'];\n\n\t\t\tconst Totalprice = document.createElement('div');\n\t\t\tconst TotalpriceId = `total_${list[i]['id']}_${list[i]['color']}_${list[i]['size']}`;\n\t\t\tTotalprice.setAttribute('id', TotalpriceId);\n\t        Totalprice.setAttribute('class', 'Totalprice');\n\t        Totalprice.innerHTML = list[i]['price'] * list[i]['qty'];\n\n\t        const deleteContainer = document.createElement('div');\n\t        deleteContainer.setAttribute('class', 'deleteContainer');\n\t        const deleteImg = document.createElement('img');\n\t        deleteImg.src = 'img/cart-remove.png';\n\t        // 讓他知道對應的 item 的 id color size 是哪個\n\t        deleteImg.setAttribute('_id', list[i]['id']) \n\t        deleteImg.setAttribute('color', list[i]['color'])\n\t        deleteImg.setAttribute('size', list[i]['size'])\n\t        deleteImg.onclick = (e) => {\n\t        \tlet target = e.target // 精簡 code, e.target有點長\n\t        \t// removeItem 是 function 在 46 行\n\t        \tremoveItem(target.getAttribute('_id'), target.getAttribute('color'),\n\t        \t\t       target.getAttribute('size'))\n\n\t        \t// 找到 對應的 dressContainer\n\t        \tlet id = `${target.getAttribute('_id')}_${target.getAttribute('color')}_${target.getAttribute('size')}`\n\n\t        \tlet item = document.getElementById(id)\n\t        \t// 找他 parentNode 叫他幹掉他小孩\n\t        \titem.parentNode.removeChild(item)\n\t        } \n\n\t        numberRight.appendChild(phonetitles);\n\t        phonetitles.appendChild(phone_product_quantity);\n  \t\t\tphonetitles.appendChild(phone_product_unit);   \n  \t\t\tphonetitles.appendChild(phone_product_total);        \n\t        dressContainer.appendChild(dressPicture);\n\t        dressPicture.appendChild(img);\n\n\t        dressContainer.appendChild(TextContainer);\n\t        TextContainer.appendChild(TextCloth);\n\t        TextContainer.appendChild(TextNumber);\n\t        TextContainer.appendChild(TextColor);\n\t        TextContainer.appendChild(TextSize);\n\t        \t\n\t       \tdressContainer.appendChild(numberRight);\n\t        numberRight.appendChild(QTY);\n\t        numberRight.appendChild(Singleprice);\n\t        numberRight.appendChild(Totalprice);\n\n\t        dressContainer.appendChild(deleteContainer);\n\t      \tdeleteContainer.appendChild(deleteImg);\n\t      \tlayout.appendChild(divider);\n       \t\tlayout.appendChild(dressContainer)\n    }\n}\n\nprintProductDetails();\n\n\n\n//cart_page redirect\nvar men__Button = document.querySelector('.men__Button');\nvar women__Button = document.querySelector('.women__Button');\nvar accessories__Button = document.querySelector('.accessories__Button');\nvar btn_logo01 = document.querySelector('.btn_logo01');\n\nmen__Button.addEventListener('click', () => {\n  window.location = \"index.html?men\";\n})\n\nwomen__Button.addEventListener('click', () => {\n  window.location = \"index.html?women\";\n})\n\naccessories__Button.addEventListener('click', () => {\n  window.location = \"index.html?accessories\";\n})\n\nbtn_logo01.addEventListener('click', () => {\n  window.location = \"index.html\";\n})\n\n\n\n\n\n// TapPay設定\nTPDirect.setupSDK(12348, 'app_pa1pQcKoY22IlnSXq5m5WP5jFKzoRG58VEXpT7wU62ud7mMbDOGzCYIlzzLF', 'sandbox');\n\nTPDirect.card.setup({\n    fields: {\n        number: {\n            // css selector\n            element: '#card-number',\n            placeholder: '**** **** **** ****'\n        },\n        expirationDate: {\n            // DOM object\n            element: document.getElementById('card-expiration-date'),\n            placeholder: 'MM / YY'\n        },\n        ccv: {\n            element: '#card-ccv',\n            placeholder: '後三碼'\n        }\n    },\n    styles: {\n        // Style all elements\n        'input': {\n            'color': 'gray'\n        },\n        // Styling ccv field\n        'input.cvc': {\n            'font-size': '16px'\n        },\n        // Styling expiration-date field\n        'input.expiration-date': {\n            'font-size': '16px'\n        },\n        // Styling card-number field\n        'input.card-number': {\n            'font-size': '16px'\n        },\n        // style focus state\n        ':focus': {\n            // 'color': 'black'\n        },\n        // style valid state\n        '.valid': {\n            'color': 'green'\n        },\n        // style invalid state\n        '.invalid': {\n            'color': 'red'\n        },\n        // Media queries\n        // Note that these apply to the iframe, not the root window.\n        '@media screen and (max-width: 400px)': {\n            'input': {\n                'color': 'orange'\n            }\n        }\n    }\n});\n\nTPDirect.card.onUpdate(function (update) {\n    // update.canGetPrime === true\n    // --> you can call TPDirect.card.getPrime()\n    console.log(submitButton);\n    //卡號正確\n    if (update.canGetPrime) {\n        // Enable submit Button to get prime.\n        submitButton.removeAttribute('disabled')\n    } else {\n        // Disable submit Button to get prime.\n        submitButton.setAttribute('disabled', true)\n    }\n\n    // cardTypes = ['mastercard', 'visa', 'jcb', 'amex', 'unknown']\n    if (update.cardType === 'visa') {\n        // Handle card type visa.\n    }\n\n    // number 欄位是錯誤的\n    if (update.status.number === 2) {\n        // setNumberFormGroupToError()\n    } else if (update.status.number === 0) {\n        // setNumberFormGroupToSuccess()\n    } else {\n        // setNumberFormGroupToNormal()\n    }\n\n    if (update.status.expiry === 2) {\n        // setNumberFormGroupToError()\n    } else if (update.status.expiry === 0) {\n        // setNumberFormGroupToSuccess()\n    } else {\n        // setNumberFormGroupToNormal()\n    }\n\n    if (update.status.cvc === 2) {\n        // setNumberFormGroupToError()\n    } else if (update.status.cvc === 0) {\n        // setNumberFormGroupToSuccess()\n    } else {\n        // setNumberFormGroupToNormal()\n    }\n});\n\n// call TPDirect.card.getPrime when user submit form to get tappay prime\n// $('form').on('submit', onSubmit)\n\nfunction onSubmit(event) {\n    event.preventDefault()\n\n    // 取得 TapPay Fields 的 status\n    const tappayStatus = TPDirect.card.getTappayFieldsStatus();\n\n    // 確認是否可以 getPrime\n    if (tappayStatus.canGetPrime === false) {\n        alert('信用卡資訊輸入有誤，請再確認是否資訊正確');\n        return false;\n    }\n\n    // Get prime\n    const prime = new Promise((resolve, reject) => {\n        TPDirect.card.getPrime((result) => {\n            const {\n                status,\n                msg,\n                card\n            } = result;\n            const {\n                prime\n            } = card;\n\n            if (status !== 0) {\n                console.log(`Get prime error ${msg}`);\n                reject(`Get prime error ${msg}`);\n            }\n\n            resolve(prime);\n\n            // send prime to your server, to pay with Pay by Prime API .\n            // Pay By Prime Docs: https://docs.tappaysdk.com/tutorial/zh/back.html#pay-by-prime-api\n        });\n    });\n\n    return prime;\n\n}\n\nconst submitButton = document.querySelector('.confirm-button');\nconst basicInfo = document.querySelector('.order-information');\n\n\n// check購物車內是否有東西\nfunction checkCart() {\n\n    // 確認購物車內有無商品\n    if (list.length > 0) {\n        return true;\n    } else {\n        alert(\"購物車內沒有商品\");\n        return false;\n    }\n\n}\n\n// check基本資訊是否都有填好\nfunction checkBasciInfo() {\n\n    const formData = new FormData(basicInfo);\n\n    if (formData.get('name') !== \"\" && formData.get('phone') !== \"\" && formData.get('address') !== \"\" && formData.get('email') !== \"\" && formData.get('time') !== null) {\n        return true;\n    } else {\n        alert(\"訂購資料尚未填妥，請再確認是否資訊完整\");\n        return false;\n    }\n}\n\n\n\n\n// 傳送資料\nfunction postData(data) {\n    return new Promise((resolve, reject) => {\n        const xhr = new XMLHttpRequest();\n\n        xhr.open(\"POST\", `http://${hostName}/api/${apiVersion}/order/checkout`);\n        xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');\n        xhr.onload = function () {\n            resolve(this.responseText);\n            return this.responseText;\n        }\n        xhr.onerror = function () {\n            reject(\"Something went wrong!\");\n        }\n\n        xhr.send(data);\n    });\n}\n\nsubmitButton.addEventListener(\"click\", () => {\n\n    if (checkCart() !== false && checkBasciInfo() !== false) {\n\n        // 按鈕呈現在loading的狀態\n        submitButton.textContent = \"\";\n        submitButton.classList.add('loading');\n\n\n        let checkCard = onSubmit(event);\n        const formData = new FormData(basicInfo);\n        const subtotal = document.querySelector(\".should-pay\");\n\n        if (checkCard !== false) {\n            // 取得Promise資料\n            return checkCard.then((result) => {\n\n                // 刪除list內多餘的key與值\n                for (var i = 0; i < list.length; i++) {\n                    delete list[i].img;\n                    delete list[i].max;\n                }\n\n                var checkOutOrder = {\n                    prime: result,\n                    order: {\n                        shipping: \"delivery\",\n                        payment: \"credit_card\",\n                        subtotal: subtotal.value,\n                        freight: 30,\n                        total: subtotal.value + 30,\n                        recipient: {\n                            name: formData.get('name'),\n                            phone: formData.get('phone'),\n                            email: formData.get('email'),\n                            address: formData.get('address'),\n                            time: formData.get('time')\n                        },\n                        list: list\n                    }\n\n                };\n\n                checkOutOrder = JSON.stringify(checkOutOrder);\n\n                // 送出資料並取得number\n                let orderData = postData(checkOutOrder);\n\n                orderData.then((result) => {\n                    const responseMsg = JSON.parse(result);\n\n                    // 確認是否拿到正確的資料\n                    if (responseMsg.error === undefined) {\n                        let orderNumber = responseMsg.data.number;\n                        console.log(orderNumber);\n                        localStorage.clear();\n                        window.location.href = './thank-you.html';\n                    } else {\n                        console.log(responseMsg.error);\n                        alert('哪裡出錯了！請確認資料是否都正確並再填寫一次');\n                        window.location.href = \"../pages/cart.html\";\n                    }\n\n                });\n\n            }).catch((error) => {\n                console.log(error);\n            });\n        }\n\n    }\n\n});",
+			"file": "cart_js/index.js",
+			"file_size": 17677,
+			"file_write_time": 131959807126258510,
+			"settings":
+			{
+				"buffer_size": 16695,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "cart.html",
+			"settings":
+			{
+				"buffer_size": 9051,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"install pack",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/cart_js/TapPay.js",
+		"/Users/huangzhefen/Desktop/TapPay.js",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/cart.html",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/index.html",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/product.js",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/cart_js/index.js",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/thank-you.css",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/thank-you.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week3_part2/javascript/cart.js",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/product.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week3_part2/pages/cart.html",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/cart_css/cart-mobile.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week3_part2/javascript/localstorage.js",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week3_part2/stylesheet/cart.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week3_part2/stylesheet/style.css",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/localstorage.js",
+		"/Users/huangzhefen/Desktop/thank-you.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week3_part2/pages/product.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week3_part2/index.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week3_part2/javascript/sylish.js",
+		"/Users/huangzhefen/Desktop/localstorage.js",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week3_part2/javascript/productdetail.js",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week3_part2/javascript/pagesearch.js",
+		"/Users/huangzhefen/Desktop/test/cart_css/cart-screen.css",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/cart_css/cart-screen.css",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/product.html",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/cart_css/base.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/week4_part5_example/cart.html",
+		"/Users/huangzhefen/Desktop/product_example.js",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/style.css",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/cart_css/header.css",
+		"/Users/huangzhefen/Desktop/cart.html",
+		"/Users/huangzhefen/Desktop/setProductPrice.js",
+		"/Users/huangzhefen/Desktop/banner.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week2_part4/javascript/productdetail.js",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week2_part4/pages/product.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week2_part4/javascript/localstorage.js",
+		"/Users/huangzhefen/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/huangzhefen/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/jim_week2_part3/product.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week2_part4/stylesheet/productdetail.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/jim_week2_part3/productHandleStock.js",
+		"/Users/huangzhefen/Desktop/search.js",
+		"/Users/huangzhefen/Desktop/index.js",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week2_part4/index.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/week2_part1~part3/product.js",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/week2_part1~part3/index.js",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/lennonx_week2_part2/js/index.js",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/week2_part1~part3/product.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/week2_part1~part3/index.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/lennonx_week2_part2/html/index.html",
+		"/Users/huangzhefen/Desktop/lennonx_week2_part2/html/product.html",
+		"/Users/huangzhefen/Desktop/lennonx_week2_part2/html/index.html",
+		"/Users/huangzhefen/Desktop/product.js",
+		"/Users/huangzhefen/Desktop/lennonx_week2_part2/css/product.css",
+		"/Users/huangzhefen/Desktop/lennonx_week2_part2/js/index.js",
+		"/Users/huangzhefen/Desktop/lennonx_week2_part2/css/index.css",
+		"/Users/huangzhefen/Desktop/lennonx_week2_part2/js/product.js",
+		"/Users/huangzhefen/Desktop/product_media_queries.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/week2_part1~part3/product.css",
+		"/Users/huangzhefen/Desktop/sylish.js",
+		"/Users/huangzhefen/Desktop/style.css",
+		"/Users/huangzhefen/Desktop/index.html",
+		"/Users/huangzhefen/Desktop/test/index.html",
+		"/Users/huangzhefen/Desktop/test/style.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/part5_push 上去版本/index.html",
+		"/Users/huangzhefen/Desktop/campaign.js",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/week2_part1~part3/scroll.js",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/week2_part1~part3/search.js",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/week2_part1~part3/index.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/week1_part_4 push 上去版本/index.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/week2_part1~part3/campaign.js",
+		"/Users/huangzhefen/Desktop/test.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/現在做到的進度_part5&week2_part1&2/product.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/現在做到的進度_part5&week2_part1&2/index.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/現在做到的進度_part5&week2_part1&2/product.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/week1_part_3_新的要 push 上去/index.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/現在做到的進度_part5&week2_part1&2/style.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/week1_part2_merge的版本/style.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/week1_part2_merge的版本/index.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/week1_part2_push上去的版本/style.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/week1_part2_push上去的版本/index.html",
+		"/Users/huangzhefen/Desktop/index.css",
+		"/Users/huangzhefen/Desktop/scroll.js",
+		"/Users/huangzhefen/Desktop/product.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/week2_part1~part3/js.html",
+		"/Users/huangzhefen/Desktop/product.html",
+		"/Users/huangzhefen/Desktop/prodcut_1.html",
+		"/Users/huangzhefen/Desktop/check.html",
+		"/Users/huangzhefen/Desktop/week1_刻板/index.html",
+		"/Users/huangzhefen/Desktop/week1_刻板/style.css",
+		"/Users/huangzhefen/Desktop/Example/part-3_example-1/stylish.js",
+		"/Users/huangzhefen/Desktop/Example/part-3_example-2/index.js",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/week-1 (by 20 Feb.)/part-2/20190219_style.css",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/week-1 (by 20 Feb.)/part-2/20190219_index.html",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/week-1 (by 20 Feb.)/part-2/indext.html",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/week-1 (by 20 Feb.)/part-2/style.css",
+		"/Users/huangzhefen/Desktop/practice_01/index.html",
+		"/Users/huangzhefen/Desktop/practice_01/css/component.css",
+		"/Users/huangzhefen/Desktop/text1.html",
+		"/Users/huangzhefen/Desktop/remote_assignment/week4_assignment/assignment2_week4.html",
+		"/Users/huangzhefen/Desktop/reset.css",
+		"/Users/huangzhefen/Desktop/component.css",
+		"/Users/huangzhefen/Desktop/practice01.html",
+		"/Users/huangzhefen/Desktop/indext.html",
+		"/Users/huangzhefen/Desktop/dexonDapp/style.css",
+		"/Users/huangzhefen/Desktop/dexonDapp/index.html",
+		"/Users/huangzhefen/Desktop/remote_assignment/week1_assignment_revise/assignment1.css",
+		"/Users/huangzhefen/Desktop/remote_assignment/week1_assignment_revise/assignment1.html",
+		"/Users/huangzhefen/Desktop/remote_assignment/week4_assignment/react_file/index.html",
+		"/Users/huangzhefen/Desktop/remote_assignment/week3_assignement/sum.html",
+		"/Users/huangzhefen/Desktop/remote_assignment/week4_assignment/assignment2_week4.js",
+		"/Users/huangzhefen/Desktop/test.js",
+		"/Users/huangzhefen/Desktop/assignment_week4.html",
+		"/Users/huangzhefen/Desktop/assignment_week4.js",
+		"/Users/huangzhefen/Desktop/Appworks_class/week2_assignment/assignment4/assignment1.js",
+		"/Users/huangzhefen/Desktop/Appworks_class/week2_assignment/assignment4/assignment1.html",
+		"/Users/huangzhefen/Desktop/Appworks_class /week2_assignment/assignment4/assignment1.js",
+		"/Users/huangzhefen/Desktop/Appworks_class/week2_assignment/assignment4/assignment1_20190129.html",
+		"/Users/huangzhefen/Downloads/Appworks_class 2/week2_assignment/assignment4/assignment1.js"
+	],
+	"find":
+	{
+		"height": 45.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"SubmitButton",
+			"SubmitButtonState",
+			"changeSubmitButtonState",
+			"jquery",
+			"iframe",
+			"postm",
+			"iFrame",
+			"iframe",
+			"submitButton",
+			"postMessage"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "cart_js/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16695,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13761,
+								13761
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 177.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "cart.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9051,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8946,
+								8946
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 6019.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 33.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "stylish.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 232.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
