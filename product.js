@@ -65,6 +65,16 @@ const getProductDetails = (id) => {
     return get(endPoint); //endpoint 的字串會跑到 get function api 值裡
 }
 
+const getColorNameBycode = (data, color_code) =>{
+  for( w = 0; w < data['data']['colors'].length; w++){
+    if( color_code === data['data']['colors'][w]['code']){
+      return data['data']['colors'][w]['name'];
+    }
+  
+  }
+
+}
+
 //宣告 function 把拿到的 data 畫出來
 const printProductDetails = (data) => {
     mainImg[0].setAttribute('src', data['data']['main_image']);
@@ -322,6 +332,7 @@ function productHandleStock(data) {
       } 
     }
    
+   //只有 minus 跟 plus 跟 findMaxAmount function 有用到
     productPage__Container__Sub__Info__Amount__Container__Minus.addEventListener('click', minus);
     productPage__Container__Sub__Info__Amount__Container__Plus.addEventListener('click', plus);
 
@@ -343,6 +354,7 @@ function productHandleStock(data) {
       }
     }
 
+//做整個頁面點擊，判斷尺寸＋顏色有沒有庫存
       document.addEventListener('click', () => {
       console.log('click')
       var productPage__Container__Sub__Info__Amount__Container__Minus = document.querySelector('.productPage__Container__Sub__Info__Amount__Container__Minus');

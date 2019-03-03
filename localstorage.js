@@ -44,12 +44,21 @@ function getlocalStorage(data) {
 	    // if (list.length > 0) {
 	    for (var i = 0; i < list.length; i++) {
 	        // 判斷資料內有沒有一模一樣的商品被買過
-	        if (list[i].id === data['data']['id'] && list[i].color === currentColor && list[i].size === currentSize) {
+	        if (list[i].id === data['data']['id'] && list[i].color.code === currentColor && list[i].size === currentSize) {
 	            list[i].qty = currentAmount;
 	        } else {
 	            j++; // j = list.length
 	        }
 	    }
+
+//創了一個 color 的 object，一個是 name，一個是 code，為了 checkout Api 做準備的
+//https://github.com/AppWorks-School/API-Doc/tree/master/Stylish#order-check-out-api
+//checkou 對應的 api 是要 object	
+	    var colorObj = {
+	    	name:getColorNameBycode (data, currentColor) ,
+	    	code:currentColor
+	    };
+
 
 	    // 當我點了 add to cart，list 就會開始寫入這個品項
 	    // 當j的數字等於list陣列的長度就代表沒有買過一模一樣的商品，所以需要再新增一個
@@ -58,7 +67,7 @@ function getlocalStorage(data) {
 	        buyProduct.id = data['data']['id'];
 	        buyProduct.name = data['data']['title'];
 	        buyProduct.price = data['data']['price'];
-	        buyProduct.color = currentColor
+	        buyProduct.color = colorObj;
 	        buyProduct.size = currentSize;
 	        buyProduct.qty = currentAmount;
 	        // 把新的資料push加到list陣列裡

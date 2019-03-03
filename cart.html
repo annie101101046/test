@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>STYLiSH</title>
 	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	 <meta charset="utf-8">
+
 	<link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./product.css">
     <link rel="stylesheet" href="cart_css/banner.css">
@@ -139,25 +141,25 @@
 						        <li>選擇超商-請填寫正確收件人姓名(與證件相符)，避免無法領取</li>
 						      </ul>
 						    </div>
-						    <div class="order-information">
+						    <form class="order-information">
 						      <div class="order-title">訂購資料</div>
 						      <div class="divider"></div>
 						      <div class="field">
 						        <label for="">收件人姓名</label>
-						        <input type="text" class="name" />
+						        <input type="text" class="name" name="name"/>
 						        <span>務必填寫完整收件人姓名，避免包裹無法順利簽收</span>
 						      </div>
 						      <div class="field">
 						        <label for="">手機</label>
-						        <input type="number" pattern="[0-9]*" inputmode="numeric" class="phone" />
+						        <input type="number" name="phone" pattern="[0-9]*" inputmode="numeric" class="phone" />
 						      </div>
 						      <div class="field">
 						        <label for="">電子郵件</label>
-						        <input type="email" class="email" />
+						        <input type="email" class="email" name="email"/>
 						      </div>
 						      <div class="field">
 						        <label for="">地址</label>
-						        <input type="text" class="address" />
+						        <input type="text" class="address" name="address"/>
 						      </div>
 						      <div class="field">
 						        <label>配送時間</label>
@@ -177,12 +179,12 @@
 						          </div>
 						        </div>
 						      </div>
-						    </div>
+						    </form>
 						    <div class="divider"></div>
 						    <div class="order-checkout-wrapper">
 						      <div class="tpfields">
 						        <div class="field">
-						          <label for="card-number">信用卡號碼</label>
+						          <label for="card-number">信用卡卡號</label>
 						          <div class="tpfield" id="card-number"></div>
 						        </div>
 						        <div class="field">
@@ -197,16 +199,16 @@
 						      <div class="fee-block">
 						        <div class="fee-wrapper">
 						          <div class="title">總金額</div>
-						          <div class="fee"><span>NT. </span><span class="product-total-amount">1770</span></div>
+						          <div class="fee" ><span>NT. </span><span class="product-total-amount" id="total"></span></div>
 						        </div>
 						        <div class="fee-wrapper">
 						          <div class="title">運費</div>
-						          <div class="fee"><span>NT. </span><span class="product-freight">30</span></div>
+						          <div class="fee"><span>NT. </span><span class="product-freight" id="shipping-fee"></span></div>
 						        </div>
 						        <div class="divider"></div>
 						        <div class="fee-wrapper">
 						          <div class="title">應付金額</div>
-						          <div class="fee"><span>NT. </span><span class="should-pay">1800</span></div>
+						          <div class="fee"><span>NT. </span><span class="should-pay" id="total-fee"></span></div>
 						        </div>
 						        <input type="button" value="確認付款" class="confirm-button" disabled="disabled" />
 						      </div>
@@ -242,6 +244,10 @@
 	</div><!--/.footer-->
 </div><!--/.wrapper--> 
 </body>
+ <!-- 要先 load Tpdirect 的定義 -->
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+	<script src="cart_js/TapPay.js"></script>
 	<script src="cart_js/index.js"></script>
 </html>
 

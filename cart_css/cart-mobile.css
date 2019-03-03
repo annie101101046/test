@@ -247,6 +247,7 @@ main {
 }
 
 .tpfield {
+  width: 30vw;
   height: 40px;
   border: 1px solid #979797;
   padding: 5px 15px;

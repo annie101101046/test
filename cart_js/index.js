@@ -15,9 +15,11 @@ const getStock = (id, size, color) => {
 	.then((res) => res.json())
 	.then((data) => data['data']['variants']) // object 的 property 可以用 array 的方式獲取
 	.then((variants) => variants.filter( // for each 只要滿足下面條件的, filter 出來的結果會是一個 array
-		(variant) => variant['color_code'] === color && variant['size'] === size))
+		(variant) => variant['color_code'] === color['code'] && variant['size'] === size))
 	.then((variants) => variants[0]['stock'])
 }
+
+
 
 //改數量
 const editQty = (id, color, size, newQty) => {
@@ -36,6 +38,7 @@ const editQty = (id, color, size, newQty) => {
 					const totalPriceId = `total_${id}_${color}_${size}`;
 					totalPrice = document.getElementById(totalPriceId);
 					totalPrice.innerHTML = item['price'] * newQty;
+					UpdateTotalPrice(list);
 					return true;
 				} else {
 					return false;
@@ -45,6 +48,21 @@ const editQty = (id, color, size, newQty) => {
 		}
 	}
 }
+
+//算底下的總價格 （網頁一開始要有值，然後更改數量後又要有值，就很適合寫成 function)
+function UpdateTotalPrice(list){
+var totalPriceBelow = 0;
+    for( var r=0; r < list.length; r++){
+	totalPriceBelow += list[r]['qty'] *  list[r]['price'];
+	}
+	var total = document.getElementById('total');
+	total.innerHTML = totalPriceBelow;
+	var shippingFee = document.getElementById('shipping-fee');
+	shippingFee.innerHTML = '30';
+	var totalFee = document.getElementById('total-fee');
+	totalFee.innerHTML = parseInt(total.innerHTML, 10) + parseInt(shippingFee.innerHTML, 10);
+}
+
 
 //移除商品
 const removeItem = (id, color, size) => {
@@ -60,6 +78,7 @@ const removeItem = (id, color, size) => {
 const printProductDetails = () => {
 	//把資料從 localStorage 撈出來，放到 list 這個變數裡
 	var list = JSON.parse(localStorage.getItem('list')) || [];
+	UpdateTotalPrice(list); //	先印出總價格
 	const layout = document.querySelector('.product-blocks')
     for (let i = 0; i < list.length; i++) {
     		const divider = document.createElement('div')
@@ -81,7 +100,7 @@ const printProductDetails = () => {
 	        TextNumber.innerHTML = list[i]['id'];
 	        const TextColor = document.createElement('div');
 	        TextColor .setAttribute('class', 'TextColor');
-	        TextColor.innerHTML = '顏色 | #' + list[i]['color'];
+	        TextColor.innerHTML = '顏色 | #' + list[i].color.name;
 	        const TextSize = document.createElement('div');
 	        TextSize.innerHTML = '尺寸 | ' + list[i]['size'];
 
@@ -107,10 +126,11 @@ const printProductDetails = () => {
             // 根據 getStock 的 結果產生 (是 promise 所以要用 then 去包)
             getStock(list[i]['id'], list[i]['size'], list[i]['color'])
             .then((stock) => {
+            	console.log(list[i]);
                 // 0 ~  個 option
-                for (let k=0; k < stock; k++) {
+                for (let k = 0; k < stock; k++) {
                     const opt = document.createElement('option')
-                    if (k == list[i]['qty']) { 
+                    if (k + 1 == list[i]['qty']) { 
 						opt.selected="selected";
 					}
                     opt.innerHTML = k + 1 // 因為從 0 開始
@@ -137,7 +157,7 @@ const printProductDetails = () => {
 			const TotalpriceId = `total_${list[i]['id']}_${list[i]['color']}_${list[i]['size']}`;
 			Totalprice.setAttribute('id', TotalpriceId);
 	        Totalprice.setAttribute('class', 'Totalprice');
-	        Totalprice.innerHTML = list[i]['price']*list[i]['qty'];
+	        Totalprice.innerHTML = list[i]['price'] * list[i]['qty'];
 
 	        const deleteContainer = document.createElement('div');
 	        deleteContainer.setAttribute('class', 'deleteContainer');
@@ -211,3 +231,288 @@ accessories__Button.addEventListener('click', () => {
 btn_logo01.addEventListener('click', () => {
   window.location = "index.html";
 })
+
+
+
+
+
+// TapPay設定
+TPDirect.setupSDK(12348, 'app_pa1pQcKoY22IlnSXq5m5WP5jFKzoRG58VEXpT7wU62ud7mMbDOGzCYIlzzLF', 'sandbox');
+
+TPDirect.card.setup({
+    fields: {
+        number: {
+            // css selector
+            element: '#card-number',
+            placeholder: '**** **** **** ****'
+        },
+        expirationDate: {
+            // DOM object
+            element: document.getElementById('card-expiration-date'),
+            placeholder: 'MM / YY'
+        },
+        ccv: {
+            element: '#card-ccv',
+            placeholder: '後三碼'
+        }
+    },
+    styles: {
+        // Style all elements
+        'input': {
+            'color': 'gray'
+        },
+        // Styling ccv field
+        'input.cvc': {
+            'font-size': '16px'
+        },
+        // Styling expiration-date field
+        'input.expiration-date': {
+            'font-size': '16px'
+        },
+        // Styling card-number field
+        'input.card-number': {
+            'font-size': '16px'
+        },
+        // style focus state
+        ':focus': {
+            // 'color': 'black'
+        },
+        // style valid state
+        '.valid': {
+            'color': 'green'
+        },
+        // style invalid state
+        '.invalid': {
+            'color': 'red'
+        },
+        // Media queries
+        // Note that these apply to the iframe, not the root window.
+        '@media screen and (max-width: 400px)': {
+            'input': {
+                'color': 'orange'
+            }
+        }
+    }
+});
+
+
+//postMessage 錯誤的解法：安全性關係瀏覽器會鎖住這個功能，所以要加一個 server 來跑
+//在 sublinetext 裡加了一個套件 subline server，會加一個簡單的 html server，去 tools 地方開關
+//http://localhost:8080/stylish/cart.html
+TPDirect.card.onUpdate(function (update) {
+    // update.canGetPrime === true
+    // --> you can call TPDirect.card.getPrime()
+    //卡號正確
+    if (update.canGetPrime) {
+        // Enable submit Button to get prime.
+        submitButton.removeAttribute('disabled')
+    } else {
+        // Disable submit Button to get prime.
+        submitButton.setAttribute('disabled', true)
+    }
+
+    // cardTypes = ['mastercard', 'visa', 'jcb', 'amex', 'unknown']
+    if (update.cardType === 'visa') {
+        // Handle card type visa.
+    }
+
+    // number 欄位是錯誤的
+    if (update.status.number === 2) {
+        // setNumberFormGroupToError()
+    } else if (update.status.number === 0) {
+        // setNumberFormGroupToSuccess()
+    } else {
+        // setNumberFormGroupToNormal()
+    }
+
+    if (update.status.expiry === 2) {
+        // setNumberFormGroupToError()
+    } else if (update.status.expiry === 0) {
+        // setNumberFormGroupToSuccess()
+    } else {
+        // setNumberFormGroupToNormal()
+    }
+
+    if (update.status.cvc === 2) {
+        // setNumberFormGroupToError()
+    } else if (update.status.cvc === 0) {
+        // setNumberFormGroupToSuccess()
+    } else {
+        // setNumberFormGroupToNormal()
+    }
+});
+
+// call TPDirect.card.getPrime when user submit form to get tappay prime
+// $('form').on('submit', onSubmit)
+
+function onSubmit(event) {
+    event.preventDefault()
+
+    // 取得 TapPay Fields 的 status
+    const tappayStatus = TPDirect.card.getTappayFieldsStatus();
+
+    // 確認是否可以 getPrime
+    if (tappayStatus.canGetPrime === false) {
+        alert('信用卡資訊輸入有誤，請再確認是否資訊正確');
+        return false;
+    }
+
+    // Get prime
+    const prime = new Promise((resolve, reject) => {
+        TPDirect.card.getPrime((result) => {
+            const {
+                status,
+                msg,
+                card
+            } = result;
+            const {
+                prime
+            } = card;
+
+            if (status !== 0) {
+                console.log(`Get prime error ${msg}`);
+                reject(`Get prime error ${msg}`);
+            }
+
+            resolve(prime);
+
+            // send prime to your server, to pay with Pay by Prime API .
+            // Pay By Prime Docs: https://docs.tappaysdk.com/tutorial/zh/back.html#pay-by-prime-api
+        });
+    });
+
+    return prime;
+
+}
+
+const submitButton = document.querySelector('.confirm-button');
+const basicInfo = document.querySelector('.order-information');
+
+
+// check購物車內是否有東西
+function checkCart(list) {
+
+    // 確認購物車內有無商品
+    if (list.length > 0) {
+        return true;
+    } else {
+        alert("購物車內沒有商品");
+        return false;
+    }
+
+}
+
+// check基本資訊是否都有填好
+function checkBasciInfo() {
+
+    const formData = new FormData(basicInfo);
+
+    if (formData.get('name') !== "" && formData.get('phone') !== "" && formData.get('address') !== "" && formData.get('email') !== "" && formData.get('deliver-time') !== null) {
+        return true;
+    } else {
+        alert("訂購資料尚未填妥，請再確認是否資訊完整");
+        return false;
+    }
+}
+
+
+
+// 傳送資料
+//上面定義過了
+// const HOST_NAME = '18.214.165.31';
+// const API_VERSION = '1.0'
+
+function postData(data) {
+    return new Promise((resolve, reject) => {
+        const xhr = new XMLHttpRequest();
+
+        xhr.open("POST", `http://${HOST_NAME}/api/${API_VERSION}/order/checkout`);
+        xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+        xhr.onload = function () {
+            resolve(this.responseText);
+            return this.responseText;
+        }
+        xhr.onerror = function () {
+            reject("Something went wrong!");
+        }
+
+        xhr.send(data);
+    });
+}
+
+//檢查前就要先把 list 拿出來
+submitButton.addEventListener("click", () => {
+    var list = JSON.parse(localStorage.getItem('list')) || [];
+    if (checkCart(list) !== false && checkBasciInfo() !== false) {
+
+
+        // 按鈕呈現在loading的狀態
+        submitButton.textContent = "";
+        submitButton.classList.add('loading');
+
+
+        let checkCard = onSubmit(event);
+        const formData = new FormData(basicInfo);
+        const subtotal = document.querySelector(".should-pay");
+
+        if (checkCard !== false) {
+            // 取得Promise資料
+            return checkCard.then((result) => {
+
+                // 刪除list內多餘的key與值
+                for (var i = 0; i < list.length; i++) {
+                    delete list[i].img;
+                    delete list[i].max;
+                }
+
+                var checkOutOrder = {
+                    prime: result,
+                    order: {
+                        shipping: "delivery",
+                        payment: "credit_card",
+                        subtotal: subtotal.innerHTML,
+                        freight: 30,
+                        total: subtotal.innerHTML + 30,
+                        recipient: {
+                            name: formData.get('name'),
+                            phone: formData.get('phone'),
+                            email: formData.get('email'),
+                            address: formData.get('address'),
+                            time: formData.get('deliver-time')
+                        },
+                        list: list
+                    }
+
+                };
+
+                checkOutOrder = JSON.stringify(checkOutOrder);
+
+                // 送出資料並取得number
+                let orderData = postData(checkOutOrder);
+
+                orderData.then((result) => {
+                    const responseMsg = JSON.parse(result);
+
+                    // 確認是否拿到正確的資料
+                    if (responseMsg.error === undefined) {
+                        let orderNumber = responseMsg.data.number;
+                        console.log(orderNumber);
+                        localStorage.clear();
+                        // 跟首頁跳到 product id 
+                        window.location.href = `./thank-you.html?orderNumber=${orderNumber}`;
+                    } else {
+                        console.log(responseMsg.error);
+                        alert('哪裡出錯了！請確認資料是否都正確並再填寫一次');
+                        window.location.href = "../pages/cart.html";
+                    }
+
+                });
+
+            }).catch((error) => {
+                console.log(error);
+            });
+        }
+
+    }
+
+});

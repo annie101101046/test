@@ -3,6 +3,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px;
 }
 
 .logo {
@@ -94,22 +95,6 @@ header {
   color: #ffffff;
 }
 
-.cart-button::after {
-  content: attr(data-counts);
-  position: absolute;
-  display: inline-block;
-  padding: 2px 6px;
-  font-size: 10px;
-  color: #FFF;
-  vertical-align: text-top;
-  white-space: nowrap;
-  text-align: center;
-  text-shadow: none;
-  background-clip: padding-box;
-  background-color: #EC5252;
-  border: 2px solid #FFF;
-  border-radius: 15px;
-}
 
 @media (min-width: 1024px) {
   header {

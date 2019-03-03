@@ -6,6 +6,7 @@
 	<title>STYLiSH</title>
 	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
 </head>
 <body>
 	<div class="wrapper">
@@ -52,7 +53,7 @@
 						<div class="number"></div>
 						<img src="img/cart.png">
 					</div>
-					<div><img src="img/member.png"></div>
+					<div class="member"><img src="img/member.png"></div>
 			  </div><!--/.basic--> 
 		</header><!--/.main-header--> 
 
@@ -209,7 +210,18 @@
 		//https://github.com/AppWorks-School/API-Doc/blob/master/Stylish/README.md#product-list-api//
 
 		//在下面直接讀出來${category} //為了不要寫死，因為還有男裝女裝
-		var category = 'all' 
+		//根據他給的 Api 去設定分類
+		var category = 'all'
+		//拿網址列問號後面的東西
+		const querytString = window.location.search; 
+		if ( querytString === '?men'){
+			category = 'men';
+		} else if ( querytString === '?women'){
+			category = 'women';
+		} else if (querytString === '?accessories'){
+			category = 'accessories';
+		}
+		console.log(querytString);
 
 		// `` 變數
 		// '' 字串
@@ -400,15 +412,17 @@
     	currentPage = 0;
     
 	    if (e.innerHTML == '女裝') {
-	        category = 'women'
+	        window.location = "./index.html?women";
 	    } else if (e.innerHTML == '男裝') {
-	        category = 'men'
+	        window.location = "./index.html?men";
 	    } else if (e.innerHTML =='配件'){
-	        category = 'accessories'
+	        window.location = "./index.html?accessories";
 	    }
-	    removeAllChild()
-	    getDressData(0) //設定 0 是因為從首頁開始 //給的 api 首頁是 0 頁
 		}
+	    // 下面這兩個是因為我現在是直接去抓網址，就會重 load，不用再清掉 child
+	 //    removeAllChild()
+	 //    getDressData(0) //設定 0 是因為從首頁開始 //給的 api 首頁是 0 頁
+		// }
 
 		//另一種寫法
 // 		function switchButton(e) {
@@ -522,6 +536,7 @@
 		//網頁剛出來的時候把他叫出來
 		getDressData(0);
 
+		//跳轉到購物欄位
 		const cart = document.querySelector(".cart");
 		cart.addEventListener('click', () => {
           window.location = "./cart.html";
@@ -531,5 +546,49 @@
 		shoopingcart.addEventListener('click', () => {
         window.location = "./cart.html";
         });
+
+
+		// //facebook initialize
+		// window.fbAsyncInit = function() {
+		//     FB.init({
+		//       appId      : '157112091854354',
+		//       cookie     : true,
+		//       xfbml      : true,
+		//       version    : 'v3.2'
+		//     });
+		      
+		//     FB.AppEvents.logPageView();   
+		      
+		//   };
+
+		//   (function(d, s, id){
+		//      var js, fjs = d.getElementsByTagName(s)[0];
+		//      if (d.getElementById(id)) {return;}
+		//      js = d.createElement(s); js.id = id;
+		//      js.src = "https://connect.facebook.net/en_US/sdk.js";
+		//      fjs.parentNode.insertBefore(js, fjs);
+		//    }(document, 'script', 'facebook-jssdk'));
+
+
+// return data 是這個
+				//  {
+			 //    status: 'connected',
+			 //    authResponse: {
+		  //       accessToken: '...',
+		  //       expiresIn:'...',
+		  //       reauthorize_required_in:'...'
+		  //       signedRequest:'...',
+		  //       userID:'...'
+		  //  		 }
+				// }
+
+
+		// 點擊會員圖示，會跳到 FB 登入
+		// app domain 最後在 local 測試完後再加上去： github 的連結： https://annie101101046.github.io
+		const member = document.querySelector(".member");
+		member.addEventListener('click', () => {
+		window.location = "profile.html";
+		});    	
+
 	</script>
 </html>
