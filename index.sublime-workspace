@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"b",
+				"backgroundColor"
+			],
+			[
+				"pa",
+				"padding\tproperty"
+			],
+			[
+				"Styl",
+				"STYLiSH"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"fe",
+				"flex-direction\tproperty"
+			],
+			[
+				"fle",
+				"flex-end\talign-self"
+			],
+			[
+				"ali",
+				"align-self\tproperty"
+			],
+			[
 				"doc",
 				"document"
 			],
@@ -96,10 +124,6 @@
 				"color_code"
 			],
 			[
-				"co",
-				"color"
-			],
-			[
 				"delet",
 				"deleteImg"
 			],
@@ -156,10 +180,6 @@
 				"pageSize"
 			],
 			[
-				"fle",
-				"flexContainer"
-			],
-			[
 				"flex",
 				"flex-container"
 			],
@@ -180,20 +200,12 @@
 				"font-family\tproperty"
 			],
 			[
-				"pa",
-				"padding-bottom\tproperty"
-			],
-			[
 				"tex",
 				"text-align\tproperty"
 			],
 			[
 				"onc",
 				"onclick\tAttr"
-			],
-			[
-				"ali",
-				"align-items\tproperty"
 			],
 			[
 				"min",
@@ -440,19 +452,21 @@
 	},
 	"file_history":
 	[
-		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/profile.html",
-		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/cart_css/header.css",
-		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/profile.css",
-		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/cart_js/index.js",
-		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/thank-you.css",
-		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/thank-you.html",
-		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/product.js",
-		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/localstorage.js",
-		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/cart.html",
-		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/thankyou.js",
-		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/product.html",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/style.css",
 		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/index.html",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/cart.html",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/thank-you.html",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/profile.html",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/product.html",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/profile.js",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/profile.css",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/localstorage.js",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/product.js",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/cart_js/index.js",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/thankyou.js",
 		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/stylish.sublime-project",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/cart_css/header.css",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/thank-you.css",
 		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/cart_js/TapPay.js",
 		"/Users/huangzhefen/Desktop/TapPay.js",
 		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week3_part2/javascript/cart.js",
@@ -474,7 +488,6 @@
 		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/cart_css/base.css",
 		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/week4_part5_example/cart.html",
 		"/Users/huangzhefen/Desktop/product_example.js",
-		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/style.css",
 		"/Users/huangzhefen/Desktop/cart.html",
 		"/Users/huangzhefen/Desktop/setProductPrice.js",
 		"/Users/huangzhefen/Desktop/banner.css",
@@ -592,7 +605,7 @@
 		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
-		"whole_word": false,
+		"whole_word": true,
 		"wrap": true
 	},
 	"groups":

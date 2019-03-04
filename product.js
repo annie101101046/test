@@ -370,8 +370,8 @@ function productHandleStock(data) {
       var productPage__Container__Sub__Info__Amount__Container__Minus = document.querySelector('.productPage__Container__Sub__Info__Amount__Container__Minus');
       var productPage__Container__Sub__Info__Amount__Container__Plus = document.querySelector('.productPage__Container__Sub__Info__Amount__Container__Plus');
       var productPage__Container__Sub__Info__Amount__Container__Num = document.querySelector('.productPage__Container__Sub__Info__Amount__Container__Num');
-      let productPage__Container__Sub__Info__Amount__Container = document.querySelector('.productPage__Container__Sub__Info__Amount__Container');
-
+      var productPage__Container__Sub__Info__Amount__Container = document.querySelector('.productPage__Container__Sub__Info__Amount__Container');
+      var cart_p = document.querySelector('.cart_p p');
       var productPage__Container__Sub__Info__Color__block__Selected = document.querySelector('.productPage__Container__Sub__Info__Color__block__Selected');
       if (productPage__Container__Sub__Info__Color__block__Selected) {
         var color__Value = document.querySelector('.productPage__Container__Sub__Info__Color__block__Selected img').style.backgroundColor.replace(/\s/g, '').match(/^rgba?\((\d+),(\d+),(\d+)/i);
@@ -395,13 +395,18 @@ function productHandleStock(data) {
       }
 //如果我只點顏色或尺寸或沒有點，opacity = 0.5
       if (productPage__Container__Sub__Info__Size__Size__Block__Selected && productPage__Container__Sub__Info__Color__block__Selected) {
-         productPage__Container__Sub__Info__Amount__Container.className = "productPage__Container__Sub__Info__Amount__Container"
-      } else {
+         productPage__Container__Sub__Info__Amount__Container.className = "productPage__Container__Sub__Info__Amount__Container";
+         cart_p.style.opacity = 1;
+       } else {
         console.log(productPage__Container__Sub__Info__Amount__Container);
-        productPage__Container__Sub__Info__Amount__Container.className += " productPage__Container__Sub__Info__Amount__Container_opacity";
+        productPage__Container__Sub__Info__Amount__Container.className +=" productPage__Container__Sub__Info__Amount__Container_opacity";
       }
     })
-  }
+
+}
+
+
+
 
 
 

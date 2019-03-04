@@ -1,4 +1,5 @@
 * {
+  
   margin: 0;
   box-sizing: border-box;
 }
@@ -7,6 +8,7 @@
   outline: none;
 }
 .howManu{
+    font-size: 10px;
     position: absolute;
     color: white;
     top: -20px;
@@ -51,14 +53,17 @@
   font-size: 16px;
   letter-spacing: 3.2px;
   display: flex;
+  color:white;
   justify-content: center;
   line-height: 44px;
   margin-bottom: 28px;
 }
 
-.productPage__Container__Sub__Info__Cart_Opacity {
+.cart_p p{
+  color: white;
   opacity: 0.5;
 }
+
 
 .mainImg{
   width: auto;
@@ -621,7 +626,7 @@ footer {
   }
 
   .productPage__Container__Sub{
-    margin-top:-90px;
+    margin-top: -10px;
   }
 
   .productPage__Container__Detail__Text{

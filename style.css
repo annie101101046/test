@@ -21,6 +21,7 @@ p{
 }
 
 
+
 #keyword{
 	padding-left: 1vw;
 }
@@ -236,10 +237,8 @@ p{
 	margin:0 auto;
 	max-width: 1920px;
 	width: 100%;
-	flex: 1;
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
 	background-color: white;
 	justify-content: stretch;
 }
@@ -911,7 +910,6 @@ Media Queries
 	.footer {
 	    min-height: 115px;
 	    display: flex;
-	    flex-grow: 1;
 	    flex-flow: row nowrap;
 	    justify-content: center;
 	    text-align: center;

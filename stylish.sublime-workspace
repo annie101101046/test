@@ -407,7 +407,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 19998,
+				"buffer_size": 20423,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -416,7 +416,7 @@
 			"file": "product.html",
 			"settings":
 			{
-				"buffer_size": 6959,
+				"buffer_size": 7064,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -425,7 +425,7 @@
 			"file": "profile.html",
 			"settings":
 			{
-				"buffer_size": 4839,
+				"buffer_size": 4873,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -434,7 +434,7 @@
 			"file": "thank-you.html",
 			"settings":
 			{
-				"buffer_size": 4617,
+				"buffer_size": 4634,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -443,7 +443,7 @@
 			"file": "cart.html",
 			"settings":
 			{
-				"buffer_size": 9420,
+				"buffer_size": 9497,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -452,7 +452,7 @@
 			"file": "/Users/huangzhefen/Desktop/test/index.html",
 			"settings":
 			{
-				"buffer_size": 19674,
+				"buffer_size": 20376,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -461,7 +461,7 @@
 			"file": "/Users/huangzhefen/Desktop/test/product.html",
 			"settings":
 			{
-				"buffer_size": 6633,
+				"buffer_size": 7009,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -470,7 +470,7 @@
 			"file": "/Users/huangzhefen/Desktop/test/profile.html",
 			"settings":
 			{
-				"buffer_size": 4514,
+				"buffer_size": 4873,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -479,7 +479,7 @@
 			"file": "/Users/huangzhefen/Desktop/test/thank-you.html",
 			"settings":
 			{
-				"buffer_size": 4291,
+				"buffer_size": 4634,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -488,7 +488,7 @@
 			"file": "/Users/huangzhefen/Desktop/test/cart.html",
 			"settings":
 			{
-				"buffer_size": 9094,
+				"buffer_size": 9497,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -767,15 +767,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 19998,
+						"buffer_size": 20423,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								102,
-								358
+								0,
+								0
 							]
 						],
 						"settings":
@@ -796,15 +796,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6959,
+						"buffer_size": 7064,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15,
-								15
+								0,
+								0
 							]
 						],
 						"settings":
@@ -824,20 +824,22 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4839,
+						"buffer_size": 4873,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								97,
-								364
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -852,20 +854,22 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4617,
+						"buffer_size": 4634,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								42,
-								365
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -880,20 +884,21 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9420,
+						"buffer_size": 9497,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								9420
+								137,
+								137
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 1.0,
@@ -908,7 +913,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 19674,
+						"buffer_size": 20376,
 						"regions":
 						{
 						},
@@ -921,7 +926,8 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -936,7 +942,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6633,
+						"buffer_size": 7009,
 						"regions":
 						{
 						},
@@ -964,7 +970,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4514,
+						"buffer_size": 4873,
 						"regions":
 						{
 						},
@@ -977,7 +983,9 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -992,7 +1000,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4291,
+						"buffer_size": 4634,
 						"regions":
 						{
 						},
@@ -1005,7 +1013,9 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1020,20 +1030,21 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9094,
+						"buffer_size": 9497,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								307,
-								307
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
