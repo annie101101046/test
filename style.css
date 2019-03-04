@@ -20,6 +20,10 @@ p{
 	color: #000;
 }
 
+
+#keyword{
+	padding-left: 1vw;
+}
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -243,7 +247,6 @@ p{
 .content-wrapper{
 	display: flex;
 	padding: 5px;
-	margin-top: -499ox;
 	width: 100%;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -587,7 +590,9 @@ p{
     margin-right: auto;
     margin-top: 25px;
     align-items: center;
+    padding: 0;
 }
+
 
 .main-nav li{
 	display: inline-block;
@@ -618,6 +623,11 @@ p{
     line-height: normal;
     color: var(--sepia)
 }
+
+.main-nav a:hover {
+ color:#8b572a;
+}
+
 
 
 .main-header a{
@@ -930,10 +940,19 @@ Media Queries
 }
 
 /*On screens that are 1200px or less, set the background color to blue*/
-@media screen and (max-width: 1200px) {
-	  body {
-	    background-color: blue;
+
+@media screen and (min-width: 1045px)  {
+
+	body {
+
+		height: 100vh;
 	  }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+	  
 .story {
     padding: 166px 0 106px 300px;
 }
@@ -1184,8 +1203,8 @@ Media Queries
     color: white;
     flex:1;
     justify-content: center;
-    top
 }
+
 
 .mobile-item:first-child:after{
 	content: "";
@@ -1203,7 +1222,6 @@ Media Queries
 /*On screens that are 800px or less, set the background color to blue*/
 @media screen and (max-width: 800px) {
   body {
-    background-color: olive;
   }
 
 
@@ -1306,7 +1324,8 @@ Media Queries
 	}
 
 	.flex-container{
-	   margin-left: -52px;
+	   margin-left: -17vw;
+       margin-top: -10vw;
 	}
 
 } 

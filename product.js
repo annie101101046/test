@@ -153,6 +153,7 @@ var women__Button = document.querySelector('.women__Button');
 var accessories__Button = document.querySelector('.accessories__Button');
 var btn_logo01 = document.querySelector('.btn_logo01');
 var member = document.querySelector(".member");
+var member__iconbox = document.querySelector(".member__mobile-iconbox");
 
 men__Button.addEventListener('click', () => {
   window.location = "./index.html?men";
@@ -166,7 +167,7 @@ accessories__Button.addEventListener('click', () => {
   window.location = "./index.html?accessories";
 })
 
-accessories__Button.addEventListener('click', () => {
+btn_logo01.addEventListener('click', () => {
   window.location = "./index.html";
 })
 
@@ -174,6 +175,10 @@ member.addEventListener('click', () => {
   window.location = "profile.html";
 }) 
 
+
+member__iconbox.addEventListener('click', () => {
+  window.location = "profile.html";
+}) 
 /* Array of object 轉成 object of object
 const data = {
     '#fff': {

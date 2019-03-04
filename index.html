@@ -44,7 +44,7 @@
 				</div><!--/.btn_logo01--> 
 
 				<ul class="main-nav">
-					<li class="women__Button"><a href="#" style="color:#8b572a" onclick="switchButton(this)">女裝</a></li>
+					<li class="women__Button"><a href="#"onclick="switchButton(this)">女裝</a></li>
 					<li><div></div></li>
 					<li class="men__Button"><a href="#" onclick="switchButton(this)">男裝</a></li>
 					<li><div></div></li>
@@ -598,5 +598,16 @@
 		member.addEventListener('click', () => {
 		window.location = "profile.html";
 		});    	
+
+		const member__iconbox = document.querySelector(".member__mobile-iconbox");
+		member__iconbox.addEventListener('click', () => {
+		window.location = "profile.html";
+		});
+
+		const btn_logo01 = document.querySelector(".btn_logo01");
+		btn_logo01.addEventListener('click', () => {
+		window.location = "index.html";
+		});    	
+
 	</script>
 </html>
