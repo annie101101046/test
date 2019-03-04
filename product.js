@@ -1,5 +1,5 @@
 //抓資料
-const hostname = '18.214.165.31';
+const hostname = 'api.appworks-school.tw';
 const apiVersion = '1.0'
 const bodyContainer = document.querySelector('.bodyContainer');
 

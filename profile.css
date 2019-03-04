@@ -5,6 +5,10 @@ main {
   justify-content: center;
 }
 
+header{
+	padding: 20px;
+}
+
 .footer-nav a{
   margin-right: 10px;
 }

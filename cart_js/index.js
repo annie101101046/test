@@ -1,14 +1,14 @@
 //cart 的 js
 
 //抓資料
-const HOST_NAME = '18.214.165.31';
+const HOST_NAME = 'api.appworks-school.tw';
 const API_VERSION = '1.0'
 // http://${HOST_NAME}/assets/${id}/main.jpg
 
 //拿庫存
 // id of item
 const getStock = (id, size, color) => {
-	const url = `http://${HOST_NAME}/api/${API_VERSION}/products/details?id=${id}`;
+	const url = `https://${HOST_NAME}/api/${API_VERSION}/products/details?id=${id}`;
 	// 去拿了 url 拿到結果，url 拿到的結果就變成 response 把它轉成 json 檔，再把 json 檔的值傳給 data
 	// promise
 	return fetch(url)
@@ -426,7 +426,7 @@ function postData(data) {
     return new Promise((resolve, reject) => {
         const xhr = new XMLHttpRequest();
 
-        xhr.open("POST", `http://${HOST_NAME}/api/${API_VERSION}/order/checkout`);
+        xhr.open("POST", `https://${HOST_NAME}/api/${API_VERSION}/order/checkout`);
         xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
         xhr.onload = function () {
             resolve(this.responseText);
