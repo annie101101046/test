@@ -237,10 +237,7 @@ p{
 	margin:0 auto;
 	max-width: 1920px;
 	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
 	background-color: white;
-	justify-content: stretch;
 }
 
 .content-wrapper{
