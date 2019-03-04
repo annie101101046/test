@@ -16,7 +16,7 @@ const get = (api) => {
                 resolve(JSON.parse(this.responseText));
             }
         };
-        xhr.open('GET', `http://${hostname}/api/${apiVersion}${api}`);
+        xhr.open('GET', `https://${hostname}/api/${apiVersion}${api}`);
         xhr.send();
     });   
 }
@@ -152,6 +152,7 @@ var men__Button = document.querySelector('.men__Button');
 var women__Button = document.querySelector('.women__Button');
 var accessories__Button = document.querySelector('.accessories__Button');
 var btn_logo01 = document.querySelector('.btn_logo01');
+var member = document.querySelector(".member");
 
 men__Button.addEventListener('click', () => {
   window.location = "./index.html?men";
@@ -168,6 +169,10 @@ accessories__Button.addEventListener('click', () => {
 accessories__Button.addEventListener('click', () => {
   window.location = "./index.html";
 })
+
+member.addEventListener('click', () => {
+  window.location = "profile.html";
+}) 
 
 /* Array of object 轉成 object of object
 const data = {
@@ -392,5 +397,6 @@ function productHandleStock(data) {
       }
     })
   }
+
 
 

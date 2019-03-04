@@ -1,3 +1,7 @@
+//回去看 promise document
+//回去看 xhr document
+
+
 //cart 的 js
 
 //抓資料
@@ -215,6 +219,7 @@ var men__Button = document.querySelector('.men__Button');
 var women__Button = document.querySelector('.women__Button');
 var accessories__Button = document.querySelector('.accessories__Button');
 var btn_logo01 = document.querySelector('.btn_logo01');
+var member = document.querySelector('.member');
 
 men__Button.addEventListener('click', () => {
   window.location = "index.html?men";
@@ -230,6 +235,10 @@ accessories__Button.addEventListener('click', () => {
 
 btn_logo01.addEventListener('click', () => {
   window.location = "index.html";
+})
+
+member.addEventListener('click', () => {
+  window.location = "profile.html";
 })
 
 
@@ -417,6 +426,53 @@ function checkBasciInfo() {
 
 
 
+var accessToken = undefined; // 一開始先不定義它
+
+
+//現在只有當 FB login 的時候，要拿到 response 的 accessToken 把它送到 425 行的 accessToken 變數裡
+function checkLogin(){
+    FB.getLoginStatus(function(response) {
+     if (response.status === 'connected') {
+        console.log(response);
+        accessToken = response.authResponse.accessToken;
+        console.log(accessToken);
+     } 
+    });
+}
+
+
+//把 FB 的東西 load 進來
+    window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '157112091854354',
+              cookie     : true,
+              xfbml      : true,
+              version    : 'v3.2'
+            });
+              
+            FB.AppEvents.logPageView();
+            checkLogin();
+          };
+//在整個網頁 load 完以後，才把 FB init 起來，才做 getLoginStatus
+//          FB.login(function(response) {
+//          console.log(response);
+//              statusChangeCallback(response);
+
+// }, {scope: 'public_profile,email'});
+
+//初始化完成以後，要判斷有沒有 log in
+
+          (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "https://connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+
+
+
+
 // 傳送資料
 //上面定義過了
 // const HOST_NAME = '18.214.165.31';
@@ -424,10 +480,19 @@ function checkBasciInfo() {
 
 function postData(data) {
     return new Promise((resolve, reject) => {
+
         const xhr = new XMLHttpRequest();
 
         xhr.open("POST", `https://${HOST_NAME}/api/${API_VERSION}/order/checkout`);
+
+        if(accessToken !== undefined){
+            //把 AccessToken 放到 header 裡，而不是放到 body 裡（通常主要資料會放 body）
+          xhr.setRequestHeader('Authorization', 'Bearer ' + accessToken);   
+        }
+        //API 要求壹定要
         xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+        //onload 是一個 callback function，什麼時候要 return，什麼時候不用，要看 document
+        // 查 onload 這個 callback function
         xhr.onload = function () {
             resolve(this.responseText);
             return this.responseText;
@@ -490,6 +555,7 @@ submitButton.addEventListener("click", () => {
                 // 送出資料並取得number
                 let orderData = postData(checkOutOrder);
 
+//前面 onload return 丟給我的 
                 orderData.then((result) => {
                     const responseMsg = JSON.parse(result);
 

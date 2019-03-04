@@ -238,7 +238,7 @@
 		      creatElement__campaign__Container__SlidingBanner__Dot(responseText__JSON);
 		    }
 		  }
-		  xhr.open('GET', `https:/api.appworks-school.tw/api/1.0/marketing/campaigns`);
+		  xhr.open('GET', `https://api.appworks-school.tw/api/1.0/marketing/campaigns`);
 		  xhr.send();
 		})
 
@@ -254,7 +254,7 @@
 		//${productObj[numOfCampaign]['picture']}` 印出 productObj 裡頭的值
 		//numOfCampaign 是數值
 		  for (let numOfCampaign = 0; numOfCampaign < productObj.length; numOfCampaign++) {
-		    img__Preload[numOfCampaign] = `https:/api.appworks-school.tw${productObj[numOfCampaign]['picture']}`
+		    img__Preload[numOfCampaign] = `https://api.appworks-school.tw${productObj[numOfCampaign]['picture']}`
 		    var campaign__Container__SlidingBanner__Dot__A = document.createElement('a')
 		    var campaign__Container__SlidingBanner__Dot = document.createElement('div')
 		    campaign__Container__SlidingBanner__Dot.className += "campaign__Container__SlidingBanner__Dot";
@@ -290,7 +290,7 @@
 		const showDivs = function (targetImage, productObj) {
 		  clearTimeout(timeOutId);
 		  const campaign__Container = document.querySelector('.campaign__Container');
-		  campaign__Container.style.backgroundImage = `url('https:/api.appworks-school.tw${productObj[targetImage%productObj.length]['picture']}')`; //這邊 % 是取於數，讀完最後一張會回到第一張
+		  campaign__Container.style.backgroundImage = `url('https://api.appworks-school.tw${productObj[targetImage%productObj.length]['picture']}')`; //這邊 % 是取於數，讀完最後一張會回到第一張
 
 		 //從 0 開始，每隔 11 秒就會是第二張
 		  changeSlogon(targetImage, productObj);
@@ -335,7 +335,7 @@
 
 //page 其實這邊有用到 ${page} ，當外面要用這個 function 時，他可能會需要 1、2、3、4 頁
 	function getDressData(page) {
-			var url = `https:/api.appworks-school.tw/api/1.0/products/${category}`
+			var url = `https://api.appworks-school.tw/api/1.0/products/${category}`
 			var req = new XMLHttpRequest();
 	//我拿到 req 的 JSON 檔時，就會把值包在 event 裡傳進這個 function，
 			req.addEventListener('load', function(event) {
@@ -466,7 +466,7 @@
 				renderDress(event.target.responseText);
 			})
 
-			req.open('GET', 'https:/api.appworks-school.tw/api/1.0/products/search?keyword='+keyword, true);
+			req.open('GET', 'https://api.appworks-school.tw/api/1.0/products/search?keyword='+keyword, true);
 			req.send();
 			
 		}

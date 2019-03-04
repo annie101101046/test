@@ -1,0 +1,688 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"doc",
+				"document"
+			],
+			[
+				"conn",
+				"connected"
+			],
+			[
+				"color",
+				"colorObj"
+			],
+			[
+				"cu",
+				"currentColor"
+			],
+			[
+				"subm",
+				"submitButton"
+			],
+			[
+				"pars",
+				"parseInt"
+			],
+			[
+				"sh",
+				"shippingFee"
+			],
+			[
+				"tota",
+				"totalFee"
+			],
+			[
+				"shi",
+				"shipping-fee"
+			],
+			[
+				"totalP",
+				"totalPriceBelow"
+			],
+			[
+				"var",
+				"var"
+			],
+			[
+				"ma",
+				"margin-right\tproperty"
+			],
+			[
+				"QTY",
+				"QTYselect"
+			],
+			[
+				"in",
+				"innerHTML"
+			],
+			[
+				"ge",
+				"getElementById"
+			],
+			[
+				"q",
+				"querySelector"
+			],
+			[
+				"dre",
+				"dressContainer"
+			],
+			[
+				"get",
+				"getAttribute"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"cos",
+				"console"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"In",
+				"innerHTML"
+			],
+			[
+				"colo",
+				"color_code"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"delet",
+				"deleteImg"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"cur",
+				"currentAmount"
+			],
+			[
+				"cart",
+				"cartButton"
+			],
+			[
+				"ca",
+				"cartButton"
+			],
+			[
+				"si",
+				"sizesSelect"
+			],
+			[
+				"mar",
+				"margin-right\tproperty"
+			],
+			[
+				"cla",
+				"className"
+			],
+			[
+				"colorb",
+				"colorBoxBorder"
+			],
+			[
+				"ba",
+				"background-color\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"se",
+				"setAttribute"
+			],
+			[
+				"ap",
+				"appendChild"
+			],
+			[
+				"pag",
+				"pageSize"
+			],
+			[
+				"fle",
+				"flexContainer"
+			],
+			[
+				"flex",
+				"flex-container"
+			],
+			[
+				"html",
+				"innerHTML"
+			],
+			[
+				"margin",
+				"margin-top\tproperty"
+			],
+			[
+				"font",
+				"font-family\tproperty"
+			],
+			[
+				"fon",
+				"font-family\tproperty"
+			],
+			[
+				"pa",
+				"padding-bottom\tproperty"
+			],
+			[
+				"tex",
+				"text-align\tproperty"
+			],
+			[
+				"onc",
+				"onclick\tAttr"
+			],
+			[
+				"ali",
+				"align-items\tproperty"
+			],
+			[
+				"min",
+				"min-height\tproperty"
+			],
+			[
+				"m",
+				"margin-right\tproperty"
+			],
+			[
+				"al",
+				"align-items\tproperty"
+			],
+			[
+				"ad",
+				"appendChild"
+			],
+			[
+				"class",
+				"class"
+			],
+			[
+				"all",
+				"allChild"
+			],
+			[
+				"new",
+				"newItem1"
+			],
+			[
+				"po",
+				"position\tproperty"
+			],
+			[
+				"margi",
+				"margin-right\tproperty"
+			],
+			[
+				"margin-",
+				"margin-right\tproperty"
+			],
+			[
+				"max",
+				"max-width\tproperty"
+			],
+			[
+				"borde",
+				"border-radius\tproperty"
+			],
+			[
+				"marg",
+				"margin-right\tproperty"
+			],
+			[
+				"bo",
+				"border-color\tproperty"
+			],
+			[
+				"mi",
+				"min-height\tproperty"
+			],
+			[
+				"le",
+				"left\tproperty"
+			],
+			[
+				"di",
+				"display\tproperty"
+			],
+			[
+				"inl",
+				"inline-block\tdisplay"
+			],
+			[
+				"wi",
+				"width\tproperty"
+			],
+			[
+				"inline",
+				"inline-block\tdisplay"
+			],
+			[
+				"pad",
+				"padding\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"he",
+				"height\tproperty"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"p",
+				"padding\tproperty"
+			],
+			[
+				"ds",
+				"display\tproperty"
+			],
+			[
+				"box",
+				"box-sizing\tproperty"
+			],
+			[
+				"li",
+				"line-height\tproperty"
+			],
+			[
+				"padd",
+				"padding\tproperty"
+			],
+			[
+				"src",
+				"src\tAttr"
+			],
+			[
+				"bord",
+				"border-radius\tproperty"
+			],
+			[
+				"bor",
+				"border-color\tproperty"
+			],
+			[
+				"fl",
+				"flex-wrap\tproperty"
+			],
+			[
+				"paddin",
+				"padding-right\tproperty"
+			],
+			[
+				"border",
+				"border-color\tproperty"
+			],
+			[
+				"lef",
+				"padding-left\tproperty"
+			],
+			[
+				"spa",
+				"space-between\tjustify-content"
+			],
+			[
+				"te",
+				"text-decoration\tproperty"
+			],
+			[
+				"fo",
+				"font-style\tproperty"
+			],
+			[
+				"f",
+				"FF7D12"
+			],
+			[
+				"top",
+				"top\tproperty"
+			],
+			[
+				"newT",
+				"newTd"
+			],
+			[
+				"resp",
+				"responseText"
+			],
+			[
+				"xhttp",
+				"xhttp"
+			],
+			[
+				"cal",
+				"callinFromSomeone"
+			],
+			[
+				"pro",
+				"processUserInput"
+			],
+			[
+				"de",
+				"delayedAlert"
+			],
+			[
+				"del",
+				"delayedResult"
+			],
+			[
+				"Re",
+				"result"
+			],
+			[
+				"delay",
+				"delayTime"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"install pack",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/profile.html",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/cart_css/header.css",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/profile.css",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/cart_js/index.js",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/thank-you.css",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/thank-you.html",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/product.js",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/localstorage.js",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/cart.html",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/thankyou.js",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/product.html",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/index.html",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/stylish.sublime-project",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/cart_js/TapPay.js",
+		"/Users/huangzhefen/Desktop/TapPay.js",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week3_part2/javascript/cart.js",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/product.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week3_part2/pages/cart.html",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/cart_css/cart-mobile.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week3_part2/javascript/localstorage.js",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week3_part2/stylesheet/cart.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week3_part2/stylesheet/style.css",
+		"/Users/huangzhefen/Desktop/thank-you.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week3_part2/pages/product.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week3_part2/index.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week3_part2/javascript/sylish.js",
+		"/Users/huangzhefen/Desktop/localstorage.js",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week3_part2/javascript/productdetail.js",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week3_part2/javascript/pagesearch.js",
+		"/Users/huangzhefen/Desktop/test/cart_css/cart-screen.css",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/cart_css/cart-screen.css",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/cart_css/base.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/week4_part5_example/cart.html",
+		"/Users/huangzhefen/Desktop/product_example.js",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/students/Annie/stylish/style.css",
+		"/Users/huangzhefen/Desktop/cart.html",
+		"/Users/huangzhefen/Desktop/setProductPrice.js",
+		"/Users/huangzhefen/Desktop/banner.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week2_part4/javascript/productdetail.js",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week2_part4/pages/product.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week2_part4/javascript/localstorage.js",
+		"/Users/huangzhefen/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/huangzhefen/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/jim_week2_part3/product.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week2_part4/stylesheet/productdetail.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/jim_week2_part3/productHandleStock.js",
+		"/Users/huangzhefen/Desktop/search.js",
+		"/Users/huangzhefen/Desktop/index.js",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/Amys_week2_part4/index.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/week2_part1~part3/product.js",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/week2_part1~part3/index.js",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/lennonx_week2_part2/js/index.js",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/week2_part1~part3/product.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/week2_part1~part3/index.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/lennonx_week2_part2/html/index.html",
+		"/Users/huangzhefen/Desktop/lennonx_week2_part2/html/product.html",
+		"/Users/huangzhefen/Desktop/lennonx_week2_part2/html/index.html",
+		"/Users/huangzhefen/Desktop/product.js",
+		"/Users/huangzhefen/Desktop/lennonx_week2_part2/css/product.css",
+		"/Users/huangzhefen/Desktop/lennonx_week2_part2/js/index.js",
+		"/Users/huangzhefen/Desktop/lennonx_week2_part2/css/index.css",
+		"/Users/huangzhefen/Desktop/lennonx_week2_part2/js/product.js",
+		"/Users/huangzhefen/Desktop/product_media_queries.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/week2_part1~part3/product.css",
+		"/Users/huangzhefen/Desktop/sylish.js",
+		"/Users/huangzhefen/Desktop/style.css",
+		"/Users/huangzhefen/Desktop/index.html",
+		"/Users/huangzhefen/Desktop/test/index.html",
+		"/Users/huangzhefen/Desktop/test/style.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/part5_push 上去版本/index.html",
+		"/Users/huangzhefen/Desktop/campaign.js",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/week2_part1~part3/scroll.js",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/week2_part1~part3/search.js",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/week2_part1~part3/index.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/week1_part_4 push 上去版本/index.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/week2_part1~part3/campaign.js",
+		"/Users/huangzhefen/Desktop/test.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/現在做到的進度_part5&week2_part1&2/product.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/現在做到的進度_part5&week2_part1&2/index.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/現在做到的進度_part5&week2_part1&2/product.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/week1_part_3_新的要 push 上去/index.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/現在做到的進度_part5&week2_part1&2/style.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/week1_part2_merge的版本/style.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/week1_part2_merge的版本/index.html",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/week1_part2_push上去的版本/style.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/week1_part2_push上去的版本/index.html",
+		"/Users/huangzhefen/Desktop/index.css",
+		"/Users/huangzhefen/Desktop/scroll.js",
+		"/Users/huangzhefen/Desktop/product.css",
+		"/Users/huangzhefen/Desktop/appworks 作業整理/Example/week2_part1~part3/js.html",
+		"/Users/huangzhefen/Desktop/product.html",
+		"/Users/huangzhefen/Desktop/prodcut_1.html",
+		"/Users/huangzhefen/Desktop/check.html",
+		"/Users/huangzhefen/Desktop/week1_刻板/index.html",
+		"/Users/huangzhefen/Desktop/week1_刻板/style.css",
+		"/Users/huangzhefen/Desktop/Example/part-3_example-1/stylish.js",
+		"/Users/huangzhefen/Desktop/Example/part-3_example-2/index.js",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/week-1 (by 20 Feb.)/part-2/20190219_style.css",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/week-1 (by 20 Feb.)/part-2/20190219_index.html",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/week-1 (by 20 Feb.)/part-2/indext.html",
+		"/Users/huangzhefen/Desktop/Web-Front-End-2019-Spring/week-1 (by 20 Feb.)/part-2/style.css",
+		"/Users/huangzhefen/Desktop/practice_01/index.html",
+		"/Users/huangzhefen/Desktop/practice_01/css/component.css",
+		"/Users/huangzhefen/Desktop/text1.html",
+		"/Users/huangzhefen/Desktop/remote_assignment/week4_assignment/assignment2_week4.html",
+		"/Users/huangzhefen/Desktop/reset.css",
+		"/Users/huangzhefen/Desktop/component.css",
+		"/Users/huangzhefen/Desktop/practice01.html",
+		"/Users/huangzhefen/Desktop/indext.html",
+		"/Users/huangzhefen/Desktop/dexonDapp/style.css",
+		"/Users/huangzhefen/Desktop/dexonDapp/index.html",
+		"/Users/huangzhefen/Desktop/remote_assignment/week1_assignment_revise/assignment1.css",
+		"/Users/huangzhefen/Desktop/remote_assignment/week1_assignment_revise/assignment1.html",
+		"/Users/huangzhefen/Desktop/remote_assignment/week4_assignment/react_file/index.html",
+		"/Users/huangzhefen/Desktop/remote_assignment/week3_assignement/sum.html",
+		"/Users/huangzhefen/Desktop/remote_assignment/week4_assignment/assignment2_week4.js",
+		"/Users/huangzhefen/Desktop/test.js",
+		"/Users/huangzhefen/Desktop/assignment_week4.html",
+		"/Users/huangzhefen/Desktop/assignment_week4.js",
+		"/Users/huangzhefen/Desktop/Appworks_class/week2_assignment/assignment4/assignment1.js",
+		"/Users/huangzhefen/Desktop/Appworks_class/week2_assignment/assignment4/assignment1.html",
+		"/Users/huangzhefen/Desktop/Appworks_class /week2_assignment/assignment4/assignment1.js",
+		"/Users/huangzhefen/Desktop/Appworks_class/week2_assignment/assignment4/assignment1_20190129.html",
+		"/Users/huangzhefen/Downloads/Appworks_class 2/week2_assignment/assignment4/assignment1.js"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 33.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 232.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

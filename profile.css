@@ -1,3 +1,4 @@
+
 main {
   flex: 1;
   display: flex;
@@ -7,6 +8,13 @@ main {
 
 header{
 	padding: 20px;
+}
+
+.FbButton{
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 
 .footer-nav a{
