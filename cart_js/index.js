@@ -29,12 +29,12 @@ const getStock = (id, size, color) => {
 const editQty = (id, color, size, newQty) => {
 	var list = JSON.parse(localStorage.getItem('list')) || [];
 	for (let item of list) {
-		if(item.id == id && item.color == color && item.size == size) {
+		if(item.id == id && item.color.code == color.code && item.size == size) {
 			// 找到所有條件都符合的 item
 
 			getStock(id, size, color) // 使用 getStock 來找到庫存, 但因為他是 fetch then 的結構 ( promise )
 			.then((stock) => {        // 所以要繼續 then 下去, stock 承接 .then((variants) => variants[0]['stock'])
- 				console.log(stock)    // 所得到的值
+ 				console.log('stock',stock,newQty)    // 所得到的值
 				if (newQty <= stock) {   
 					item.qty = newQty    // 更新 qty
 					localStorage.setItem('list', JSON.stringify(list)) // 因為上面的改動只有在 memory 中進行, 
@@ -128,14 +128,14 @@ const printProductDetails = () => {
 	        const QTY = document.createElement('select');
 	        QTY.setAttribute('class', 'QTYselect');
 	        QTY.setAttribute('_id', list[i]['id']) // 因為要避免跟 html 的 id 衝突
-	        QTY.setAttribute('color', list[i]['color'])
+	        QTY.setAttribute('color', JSON.stringify(list[i]['color']))
 	        QTY.setAttribute('size', list[i]['size'])
 
             // 數值改變才會做事
             QTY.onchange = (e) => {
                 let target = e.target
                 console.log(target.value)
-                editQty(target.getAttribute('_id'), target.getAttribute('color'),
+                editQty(target.getAttribute('_id'), JSON.parse(target.getAttribute('color')),
                         target.getAttribute('size'), target.value) // 在這function (editQty) 內差一行更新 total price
             } 
 
