@@ -384,14 +384,10 @@
 	// note: these two variable are needed to declare as global
 	// pageSize 要在 getDressData 跟 scroll 的 callback之間溝通
 	// currentPage 必須有記憶性, 如果在 function 中 每次重新宣告則沒有意義
-	let pageSize = undefined;
-	//之後可能會根據 pageSize 做別的事，undefined 就是第一次做事
-	let currentPage = 0;
-
-	document.addEventListener('scroll', function() {
+	function Scroll(){
     var flexContainer = document.querySelector('.flex-container');
     var product__Container__Rect = flexContainer.getBoundingClientRect();
-    
+
     //bottom 的區間時才會做事
     if (product__Container__Rect.bottom < window.innerHeight) {
         
@@ -404,10 +400,16 @@
             // if the pageSize has been setted already, and current page is not latest page
           currentPage ++ //只加一次 
           getDressData(currentPage) 
-        }
+        }	
+	  }
+	}
+	let pageSize = undefined;
+	//之後可能會根據 pageSize 做別的事，undefined 就是第一次做事
+	let currentPage = 0;
 
-    }
-});
+	document.addEventListener('scroll', Scroll);
+
+
 	     //page 大於拿到資料的 pageSize 頁數，超過 pageSize 時就會回去 1
 	     // if (page > pageSize -1) {
 	     // 	page = 0
@@ -479,6 +481,7 @@
 
 //因為 callback search 的地方有強制要帶參數才會帶 e
 		function search(e) {
+			document.removeEventListener('scroll',Scroll);
 			var req = new XMLHttpRequest();
 			var keyword = document.getElementById("keyword").value;	
 			req.addEventListener('load', function(event) {

@@ -1,3 +1,13 @@
+/* eslint-disable block-scoped-var */
+/* eslint-disable vars-on-top */
+/* eslint-disable no-var */
+/* eslint-disable consistent-return */
+/* eslint-disable no-shadow */
+/* eslint-disable no-undef */
+/* eslint-disable max-len */
+/* eslint-disable no-param-reassign */
+/* eslint-disable camelcase */
+/* eslint-disable no-unused-vars */
 // 抓資料
 const hostname = 'api.appworks-school.tw';
 const apiVersion = '1.0';
@@ -8,8 +18,8 @@ const apiVersion = '1.0';
 // 在這邊是要讓程式不要只停在這邊，所以用了 promise
 const get = api => new Promise((resolve) => {
   const xhr = new XMLHttpRequest();
-  var loadingImg = document.createElement('img');
-  loadingImg.setAttribute("class", "loadingImg");
+  const loadingImg = document.createElement('img');
+  loadingImg.setAttribute('class', 'loadingImg');
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
       loadingImg.style.display = "none";
@@ -210,36 +220,37 @@ const colors = Object.keys(data); // ['#fff', '#000']
 function productHandleStock(data) {
   console.log(data.data.variants);
 
-  function checkStockColor(data) {
-    const productPage__Container__Sub__Info__Size__Size__Block__Selected = document.querySelector('.productPage__Container__Sub__Info__Size__Size__Block__Selected');
-    if (productPage__Container__Sub__Info__Size__Size__Block__Selected) {
-      const size__Value = document.querySelector('.productPage__Container__Sub__Info__Size__Size__Block__Selected p').innerHTML;
-      for (let i = 0; i < data.data.variants.length; i += 1) {
-        if (data.data.variants[i].size === size__Value) {
-          if (data.data.variants[i].stock === 0) {
-            const productPage__Container__Sub__Info__Color__block = document.querySelectorAll('.productPage__Container__Sub__Info__Color__block');
-            for (let j = 0; j < productPage__Container__Sub__Info__Color__block.length; j += 1) {
-              const color__Value = productPage__Container__Sub__Info__Color__block[j].innerHTML.match(/\d+/g).map(Number);
-              const color = `${Number(color__Value[0]).toString(16)}${Number(color__Value[1]).toString(16)}${Number(color__Value[2]).toString(16)}`.toUpperCase();
-              if (color === data.data.variants[i].color_code) {
-                productPage__Container__Sub__Info__Color__block[j].className += ' outOfStockColor';
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+  // function checkStockColor(data) {
+  //   const productPage__Container__Sub__Info__Size__Size__Block__Selected = document.querySelector('.productPage__Container__Sub__Info__Size__Size__Block__Selected');
+  //   if (productPage__Container__Sub__Info__Size__Size__Block__Selected) {
+  //     const size__Value = document.querySelector('.productPage__Container__Sub__Info__Size__Size__Block__Selected p').innerHTML;
+  //     for (let i = 0; i < data.data.variants.length; i += 1) {
+  //       if (data.data.variants[i].size === size__Value) {
+  //         if (data.data.variants[i].stock === 0) {
+  //           const productPage__Container__Sub__Info__Color__block = document.querySelectorAll('.productPage__Container__Sub__Info__Color__block');
+  //           for (let j = 0; j < productPage__Container__Sub__Info__Color__block.length; j += 1) {
+  //             const color__Value = productPage__Container__Sub__Info__Color__block[j].innerHTML.match(/\d+/g).map(Number);
+  //             const color = `${Number(color__Value[0]).toString(16)}${Number(color__Value[1]).toString(16)}${Number(color__Value[2]).toString(16)}`.toUpperCase();
+  //             if (color === data.data.variants[i].color_code) {
+  //               productPage__Container__Sub__Info__Color__block[j].className += ' outOfStockColor';
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 
 
-  function toggleOutOfStockColor() {
-    const outOfStock = document.querySelectorAll('.outOfStockColor');
+  // function toggleOutOfStockColor() {
+  //   const outOfStock = document.querySelectorAll('.outOfStockColor');
 
-    // 先把 ourOfStock 回復成原本的顏色
-    outOfStock.forEach((element) => {
-      element.className = 'productPage__Container__Sub__Info__Color__block';
-    });
-  }
+  //   // 先把 ourOfStock 回復成原本的顏色
+  //   outOfStock.forEach((element) => {
+  //     // eslint-disable-next-line no-param-reassign
+  //     element.className = 'productPage__Container__Sub__Info__Color__block';
+  //   });
+  // }
 
   const productHandleStock__Color = document.querySelectorAll('.productPage__Container__Sub__Info__Color__block');
   productHandleStock__Color.forEach((element) => {
@@ -258,39 +269,39 @@ function productHandleStock(data) {
 
         element.className += ' productPage__Container__Sub__Info__Color__block__Selected';
       }
-      // toggleOutOfStockSize();
-      // checkStockSize();
     });
   });
 
-  function checkStockSize() {
-    const productPage__Container__Sub__Info__Color__block__Selected = document.querySelector('.productPage__Container__Sub__Info__Color__block__Selected');
-    if (productPage__Container__Sub__Info__Color__block__Selected) {
-      // color_Value 是先讀出 rgb ， //color_Value_Hex 就是把 rgb 10 進位轉成 16 進位(Api 是 16 進位，但 css 是 10 進位)
-      const color__Value = document.querySelector('.productPage__Container__Sub__Info__Color__block__Selected img').style.backgroundColor.replace(/\s/g, '').match(/^rgba?\((\d+),(\d+),(\d+)/i);// 把空白字元去掉，match 是找 rgb 裡面的值
-      const color__Value__Hex = `${Number(color__Value[1]).toString(16)}${Number(color__Value[2]).toString(16)}${Number(color__Value[3]).toString(16)}`.toUpperCase();
-      for (let i = 0; i < data.data.variants.length; i += 1) {
-        // 這裡的 data 是最外層 function productHandleStock(data) 的 data
-        if (data.data.variants[i].color_code === color__Value__Hex) {
-          if (data.data.variants[i].stock === 0) {
-            const productPage__Container__Sub__Info__Size__Size__Block = document.querySelectorAll('.productPage__Container__Sub__Info__Size__Size__Block');
-            for (let j = 0; j < productPage__Container__Sub__Info__Size__Size__Block.length; j += 1) {
-              if (productPage__Container__Sub__Info__Size__Size__Block[j].innerHTML === `<p>${data.data.variants[i].size}</p>`) {
-                productPage__Container__Sub__Info__Size__Size__Block[j].className += ' outOfStockSize';
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+  // function checkStockSize() {
+  //   const productPage__Container__Sub__Info__Color__block__Selected = document.querySelector('.productPage__Container__Sub__Info__Color__block__Selected');
+  //   if (productPage__Container__Sub__Info__Color__block__Selected) {
+  //     // color_Value 是先讀出 rgb ， //color_Value_Hex 就是把 rgb 10 進位轉成 16 進位(Api 是 16 進位，但 css 是 10 進位)
+  //     const color__Value = document.querySelector('.productPage__Container__Sub__Info__Color__block__Selected img').style.backgroundColor.replace(/\s/g, '').match(/^rgba?\((\d+),(\d+),(\d+)/i);// 把空白字元去掉，match 是找 rgb 裡面的值
+  //     const color__Value__Hex = `${Number(color__Value[1]).toString(16)}${Number(color__Value[2]).toString(16)}${Number(color__Value[3]).toString(16)}`.toUpperCase();
+  //     for (let i = 0; i < data.data.variants.length; i += 1) {
+  //       // 這裡的 data 是最外層 function productHandleStock(data) 的 data
+  //       if (data.data.variants[i].color_code === color__Value__Hex) {
+  //         if (data.data.variants[i].stock === 0) {
+  //           const productPage__Container__Sub__Info__Size__Size__Block = document.querySelectorAll('.productPage__Container__Sub__Info__Size__Size__Block');
+  //           // eslint-disable-next-line max-len
+  //           for (let j = 0; j < productPage__Container__Sub__Info__Size__Size__Block.length; j += 1) {
+  //             if (productPage__Container__Sub__Info__Size__Size__Block[j].innerHTML === `<p>${data.data.variants[i].size}</p>`) {
+  //               productPage__Container__Sub__Info__Size__Size__Block[j].className += ' outOfStockSize';
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 
-  function toggleOutOfStockSize() {
-    const outOfStock = document.querySelectorAll('.outOfStockSize');
-    outOfStock.forEach((element) => {
-      element.className = 'productPage__Container__Sub__Info__Size__Size__Block__Selected';
-    });
-  }
+  // function toggleOutOfStockSize() {
+  //   const outOfStock = document.querySelectorAll('.outOfStockSize');
+  //   outOfStock.forEach((element) => {
+  //     // eslint-disable-next-line no-param-reassign
+  //     element.className = 'productPage__Container__Sub__Info__Size__Size__Block__Selected';
+  //   });
+  // }
 
   const productHandleStock__Size = document.querySelectorAll('.productPage__Container__Sub__Info__Size__Size__Block');
   productHandleStock__Size.forEach((element) => {
@@ -306,9 +317,7 @@ function productHandleStock(data) {
         });
         element.classList += ' productPage__Container__Sub__Info__Size__Size__Block__Selected';
       }
-      // toggleOutOfStockColor();
-      // checkStockColor(data);
-
+ 
       const productPage__Container__Sub__Info__Color__block__Selected = document.querySelector('.productPage__Container__Sub__Info__Color__block__Selected');
       const productPage__Container__Sub__Info__Size__Size__Block__Selected = document.querySelector('.productPage__Container__Sub__Info__Size__Size__Block__Selected');
     });
@@ -320,6 +329,7 @@ function productHandleStock(data) {
 
   function minus() {
     if (Number(productPage__Container__Sub__Info__Amount__Container__Num.innerHTML) > 0) {
+      // eslint-disable-next-line max-len
       productPage__Container__Sub__Info__Amount__Container__Num.innerHTML = Number(productPage__Container__Sub__Info__Amount__Container__Num.innerHTML) - 1;
     }
   }
@@ -333,6 +343,8 @@ function productHandleStock(data) {
       const size__Value = document.querySelector('.productPage__Container__Sub__Info__Size__Size__Block__Selected p').innerHTML;
 
       // Number 是自己定義的
+      // eslint-disable-next-line no-undef
+      // eslint-disable-next-line no-use-before-define
       maxAmount = findMaxAmount(data, color__Value__Hex, size__Value);
       if (maxAmount > Number(productPage__Container__Sub__Info__Amount__Container__Num.innerHTML)) {
         productPage__Container__Sub__Info__Amount__Container__Num.innerHTML = Number(productPage__Container__Sub__Info__Amount__Container__Num.innerHTML) + 1;
@@ -362,6 +374,17 @@ function productHandleStock(data) {
     }
   }
 
+  // 一開始數量的框框要是 opacity 0.1
+  const productPage__Container__Sub__Info__Amount__Container = document.querySelector('.productPage__Container__Sub__Info__Amount__Container');
+  productPage__Container__Sub__Info__Amount__Container.style.opacity = 0.1;
+
+  // 點擊加入購物車後要改 style
+  const clickMe = document.getElementById('clickMe');
+  clickMe.addEventListener('click', () => {
+    clickMe.style.opacity = 0.5;
+    setTimeout(() => { clickMe.style.opacity = 1; }, 200);
+  });
+
   // 做整個頁面點擊，判斷尺寸＋顏色有沒有庫存
   document.addEventListener('click', () => {
     console.log('click');
@@ -372,6 +395,7 @@ function productHandleStock(data) {
     const cart_p = document.querySelector('.cart_p p');
     const productPage__Container__Sub__Info__Color__block__Selected = document.querySelector('.productPage__Container__Sub__Info__Color__block__Selected');
     if (productPage__Container__Sub__Info__Color__block__Selected) {
+      // 把 color 的值從 10 進位轉成 16 進位
       const color__Value = document.querySelector('.productPage__Container__Sub__Info__Color__block__Selected img').style.backgroundColor.replace(/\s/g, '').match(/^rgba?\((\d+),(\d+),(\d+)/i);
       var color__Value__Hex = `${Number(color__Value[1]).toString(16)}${Number(color__Value[2]).toString(16)}${Number(color__Value[3]).toString(16)}`.toUpperCase();
     }
@@ -391,11 +415,11 @@ function productHandleStock(data) {
     }
     // 如果我只點顏色或尺寸或沒有點，opacity = 0.5
     if (productPage__Container__Sub__Info__Size__Size__Block__Selected && productPage__Container__Sub__Info__Color__block__Selected) {
-      productPage__Container__Sub__Info__Amount__Container.className = 'productPage__Container__Sub__Info__Amount__Container';
+      productPage__Container__Sub__Info__Amount__Container.style.opacity = 1;
       cart_p.style.opacity = 1;
     } else {
       console.log(productPage__Container__Sub__Info__Amount__Container);
-      productPage__Container__Sub__Info__Amount__Container.className += ' productPage__Container__Sub__Info__Amount__Container_opacity';
+      productPage__Container__Sub__Info__Amount__Container.style.opacity = 0.1;
     }
   });
 }
