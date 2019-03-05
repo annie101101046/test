@@ -17,8 +17,8 @@ header{
 .FbButton{
     display: flex;
     position: absolute;
-    right: 10px;
-    top: 390px;
+    right: 1vw;
+    bottom: 1vh;
 }
 
 .footer-nav a{
