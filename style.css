@@ -21,6 +21,21 @@ p{
 }
 
 
+.cart{
+  position: relative;
+  cursor: pointer;
+}
+
+.member{
+	cursor: pointer;
+}
+
+
+.loadingImg{
+	position: absolute;
+    top: 50vh;
+    left: 50vw;
+}
 
 #keyword{
 	padding-left: 1vw;
@@ -31,14 +46,19 @@ p{
 
 /* ---- Layout Containers ---- */
 
+
+.shoopingcart__mobile-iconbox img,
+.member__mobile-iconbox img{
+	margin-right: 15px;
+}
+
 .campaign__Container {
   position: relative;
   width: 100%;
   height: 31.25vw;
   background-size: 100vw 31.25vw;
-  margin-bottom: 20px;
-  /* animation: slide 0.5s forwards; */
-  /* animation-delay: 2s; */
+  animation: slide 0.5s forwards; 
+  animation-delay: 2s; 
 }
 
 .campaign__Container__Slogon {
@@ -237,6 +257,7 @@ p{
 	margin:0 auto;
 	max-width: 1920px;
 	width: 100%;
+	display: inline-grid;
 	background-color: white;
 }
 
@@ -350,6 +371,7 @@ p{
 	align-items: center;
 	justify-content: space-between;
 	flex-flow: row wrap;
+	margin-top: 0.8vh;
 }
 
 .basic > div {
@@ -357,6 +379,7 @@ p{
 	height: 50px;
 	text-decoration: none;
 	margin-right: 40px;
+    cursor: pointer;
 }
 
 .basic > img{
@@ -590,13 +613,16 @@ p{
 }
 
 
+
 .main-nav li{
 	display: inline-block;
 	float: left;
 	margin-right:2px;
 	padding: 5px 5px;
 	position: relative;
+
 }
+
 
 .main-nav li > div {
 	height: 28px;
@@ -889,6 +915,7 @@ Media Queries
 
 
 /* On screens that are 1400px or less, set the background color to blue */
+
 
 @media screen and (max-width: 1400px){
 
@@ -1339,9 +1366,6 @@ Media Queries
 		font-size:10px;
 	}
 
-	body {
-	    background-color: olive;
-	}
 
 	#parent{
 		margin-bottom:0px;
@@ -1408,12 +1432,13 @@ Media Queries
 	.phone-header{
     width: 100%;
     height: 20px;
-    display: flex;
+    display: none;
     flex-flow: row wrap;
     background-color: transparent;
  }
 
 	.main-header {
+	margin-block-end: -2vh;
     flex-direction: row;
     text-align: center;
     flex-flow: row wrap;
@@ -1446,9 +1471,7 @@ Media Queries
 
 	.main-nav li{
 	display: inline-block;
-	float: left;
 	margin-right: 10px;
-	padding-bottom: 10px;
 	position: relative;
 	}
 
@@ -1767,9 +1790,12 @@ Media Queries
     .footer-nav	:nth-child(5) { order: ; }
     
     .only-for-phone{
-    	top:30px;
-    	width:20px;
-    	height:20px;
+         top: 1.5vh;
+         width: 30px;
+	    height: 30px;
+	    display: block;
+	    position: absolute;
+	    right: 10%;
     }
 }
 

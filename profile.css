@@ -4,6 +4,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 header{
@@ -27,6 +28,7 @@ header{
 }
 
 .card {
+  margin: 5vw;
   height: 60vh;
   width: 60vw;
   position: relative;
@@ -37,7 +39,6 @@ header{
 }
 
 .card-header {
-  padding: 15px 40px;
   border-bottom: 1px solid #d4d4d5;
 }
 
@@ -47,7 +48,7 @@ header{
 }
 
 .content {
-  margin-top: 1vw;
+  margin-top: 4vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,12 +68,14 @@ header{
 }
 
 .header{
-    width: 200px;
-    height: 200px;
+    margin-top: 20px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
+    border : gray 1px solid;
 }
 
 .header > img{
@@ -187,3 +190,8 @@ header{
     display: none;
   }
 } 
+
+
+
+
+

@@ -10,7 +10,6 @@
 	  gtag('js', new Date());
 	  gtag('config', 'UA-135511301-1');
 	</script>
-	\
 	<title>STYLiSH</title>
 	<meta name="description" content="STYLiSH provides men and women clothes">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -211,7 +210,7 @@
 		//* form 功能
 		var form = document.getElementById('form');
 		form.addEventListener('focus', function( event ) {
- 		 event.target.style.background = '#gray';    
+ 		 event.target.style.background ='gray';    
 		}, true);
 
 		form.addEventListener('blur', function( event ) {
@@ -244,11 +243,20 @@
 
 		document.addEventListener('DOMContentLoaded', () => {
 		  var xhr = new XMLHttpRequest();
+		  var loadingImg = document.createElement('img');
+		  loadingImg.setAttribute("class", "loadingImg");
 		  xhr.onreadystatechange = () => {
 		    if (xhr.readyState === 4 && xhr.status === 200) {
+				// delete loading image
+			  loadingImg.style.display = "none";
 		      let responseText__JSON = JSON.parse(xhr.responseText)['data'];
 		      creatElement__campaign__Container__SlidingBanner__Dot(responseText__JSON);
-		    }
+			}
+			else {
+				// show loading image
+				loadingImg.src = "img/loading.gif"
+				document.body.appendChild(loadingImg);
+			}
 		  }
 		  xhr.open('GET', `https://api.appworks-school.tw/api/1.0/marketing/campaigns`);
 		  xhr.send();

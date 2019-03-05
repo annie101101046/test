@@ -139,8 +139,8 @@ footer {
   }
 
   .links img {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
   }
 
   .links img:not(:first-child) {

@@ -4,15 +4,20 @@
 function checkLogin(){
 	FB.getLoginStatus(function(response) {
 	 var fbButton = document.querySelector('.fb-login-button');
+	 var loadingImg = document.createElement('img');
+	 var header = document.querySelector('.header');
+	 //在 callback function 拿到資料後就會被覆寫
+	 header.style.backgroundImage = "url(img/loading.gif)";
+	 loadingImg.setAttribute("class", "loadingImg");
 	 if (response.status === 'connected') {
-	 	statusChangeCallback(response);
-	 } else { 
-
-	 }
+		 statusChangeCallback(response);
+		 loadingImg.style.display = "none";
+	 } 
 	});
 }
 
 	window.fbAsyncInit = function() {
+		
 		    FB.init({
 		      appId      : '157112091854354',
 		      cookie     : true,
@@ -63,24 +68,25 @@ function statusChangeCallback(response){
 
 FB.api(
 //https://developers.facebook.com/docs/graph-api/reference/user
-  			'/me', //直接拿 login 這個人的資料
-  			'GET',
-  			{"fields":"picture.type(large), email, name"},
-  			function(response) {
-  			var header = document.querySelector('.header');
-  			header.style.backgroundImage = `url('${response['picture']['data']['url']}')`;
-  			var checkmark = document.querySelector('.checkmark');
-  			checkmark.innerHTML = '姓名： ' + response['name'];
-  			var crossmark = document.querySelector('.crossmark');
-  			crossmark.innerHTML = 'Email： ' + response['email'];
-      // Insert your code here
-  			}
-	);
-	}
+	'/me', //直接拿 login 這個人的資料
+	'GET',
+	{"fields": "picture.type(large), email, name"},
+	function(response) {
+		var header = document.querySelector('.header');
+		header.style.backgroundImage = `url('${response['picture']['data']['url']}')`;
+			
+		var checkmark = document.querySelector('.checkmark');
+		checkmark.innerHTML = '姓名： ' + response['name'];
+		var crossmark = document.querySelector('.crossmark');
+		crossmark.innerHTML = 'Email： ' + response['email'];
+		// Insert your code here
+	});
+}
 	//reply 回來的樣子
 	// {
  //  "name": "Your Name",
  //  "id": "your-user-id"
 	// }
+
 
 

@@ -6,7 +6,7 @@
 
 //抓資料
 const HOST_NAME = 'api.appworks-school.tw';
-const API_VERSION = '1.0'
+const API_VERSION = '1.0';
 // http://${HOST_NAME}/assets/${id}/main.jpg
 
 //拿庫存
@@ -93,8 +93,21 @@ const printProductDetails = () => {
 	        const dressPicture = document.createElement('div');
 	        dressPicture.setAttribute('class', 'Imgbox');
 	        const img = document.createElement('img');
-	        //image 放進來
+            //image 放進來
+            const loadingImg = document.createElement('img');
 	        img.src=`http://${HOST_NAME}/assets/${list[i]['id']}/main.jpg`;
+            img.onload = () => {
+                
+		        loadingImg.setAttribute("class", "loadingImg");
+                loadingImg.src = "img/loading.gif";
+                document.body.appendChild(loadingImg);
+                while(!img.complete) {
+                    sleep(1)
+                }
+                loadingImg.style.display="none";
+            }
+            
+            
 
 	    	const TextContainer = document.createElement('div');
 	    	TextContainer.setAttribute('class', 'TextContainer');
@@ -197,7 +210,7 @@ const printProductDetails = () => {
 	        TextContainer.appendChild(TextNumber);
 	        TextContainer.appendChild(TextColor);
 	        TextContainer.appendChild(TextSize);
-	        	
+
 	       	dressContainer.appendChild(numberRight);
 	        numberRight.appendChild(QTY);
 	        numberRight.appendChild(Singleprice);
@@ -220,6 +233,7 @@ var women__Button = document.querySelector('.women__Button');
 var accessories__Button = document.querySelector('.accessories__Button');
 var btn_logo01 = document.querySelector('.btn_logo01');
 var member = document.querySelector('.member');
+var member_mobile = document.querySelector('.member__mobile-iconbox');
 
 men__Button.addEventListener('click', () => {
   window.location = "index.html?men";
@@ -241,6 +255,9 @@ member.addEventListener('click', () => {
   window.location = "profile.html";
 })
 
+member_mobile.addEventListener('click', () => {
+  window.location = "profile.html";
+})
 
 
 
@@ -411,17 +428,39 @@ function checkCart(list) {
 
 }
 
+function attCheck(attr, value) {
+    
+    const regex = {
+        'phone': /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/,
+        'email': /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/,
+    }
+    if(attr in regex) {
+        return regex[attr].test(value);
+    } else {
+        // Not support regex parse, always return true.
+        return true
+    }
+}
+
 // check基本資訊是否都有填好
 function checkBasciInfo() {
 
     const formData = new FormData(basicInfo);
 
-    if (formData.get('name') !== "" && formData.get('phone') !== "" && formData.get('address') !== "" && formData.get('email') !== "" && formData.get('deliver-time') !== null) {
-        return true;
-    } else {
-        alert("訂購資料尚未填妥，請再確認是否資訊完整");
-        return false;
+    for(let key of formData.keys()) {
+        const value = formData.get(key)
+        if (value === "") {
+            alert("訂購資料尚未填妥，請再確認是否資訊完整");
+            return false;
+        }
+        if (!attCheck(key, value)) {
+            alert("訂購資料尚未填妥，請再確認是否資訊完整");
+            return false;
+        }
+        
     }
+    return true;
+    
 }
 
 
