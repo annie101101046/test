@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 /* eslint-disable no-shadow */
 /* eslint-disable prefer-const */
 /* eslint-disable no-use-before-define */
@@ -93,3 +94,12 @@ function statusChangeCallback(response) {
 //  "name": "Your Name",
 //  "id": "your-user-id"
 // }
+
+newFunction();
+// product_page redirect
+function newFunction() {
+  const logo = document.querySelector('.logo');
+  logo.addEventListener('click', () => {
+    window.location = 'index.html';
+  });
+}
